@@ -1,0 +1,2560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammed Al Fayas N – Full Stack & AI Application Developer</title>
+    <meta name="description" content="Portfolio of Muhammed Al Fayas N, Full Stack Developer & AI Engineer specializing in React, FastAPI, RAG, WebGL, and autonomous AI systems.">
+    <meta name="keywords" content="Muhammed Al Fayas N, AI Developer, Full Stack Developer, RAG, Ollama, React, FastAPI, Python, Three.js, Cyberpunk Resume">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://proweb-creators.netlify.app/">
+    <meta property="og:title" content="Muhammed Al Fayas N – Full Stack & AI Developer">
+    <meta property="og:description" content="Explore the immersive 3D developer portfolio of Muhammed Al Fayas N. Building AI agents, RAG pipelines, and fullstack products.">
+    <meta property="og:image" content="https://proweb-creators.netlify.app/og-image.png">
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Muhammed Al Fayas N – Full Stack & AI Developer">
+    <meta name="twitter:description" content="Explore the immersive 3D developer portfolio of Muhammed Al Fayas N.">
+    <meta name="twitter:image" content="https://proweb-creators.netlify.app/og-image.png">
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Muhammed Al Fayas N",
+      "jobTitle": "Full Stack & AI Application Developer",
+      "url": "https://proweb-creators.netlify.app",
+      "sameAs": [
+        "https://linkedin.com/in/muhammed-al-fayas-n-8475052a1",
+        "https://github.com/muhammed-al-fayas"
+      ],
+      "knowsAbout": ["React.js", "FastAPI", "Python", "Docker", "Artificial Intelligence", "Large Language Models", "WebGL"]
+    }
+    </script>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Floating Background Gradient Blobs -->
+    <div class="gradient-blob blob-1"></div>
+    <div class="gradient-blob blob-2"></div>
+
+    <!-- Biometric Scanner Intro Screen -->
+    <div id="intro-scan">
+        <div class="scan-laser"></div>
+        <div class="scan-ui">
+            <div class="scan-text">SYS.AUTHENTICATION: REQUIRED</div>
+            <div class="scan-progress-bar"><div class="scan-progress"></div></div>
+            <button id="skip-scan-btn">SKIP SECURE SCAN</button>
+        </div>
+    </div>
+
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- 3D Interactive Hero Landing Section -->
+    <header id="hero-landing" class="hero-section">
+        <div class="hero-content">
+            <div class="hero-badge"><i class="fas fa-microchip"></i> COCKPIT SYSTEM ONLINE</div>
+            <h1 class="hero-title">MUHAMMED AL FAYAS N</h1>
+            <p class="hero-subtitle">FULL STACK DEVELOPER &amp; AI SYSTEMS ENGINEER</p>
+            <p class="hero-tagline">Architecting Autonomic AI Agents, Custom RAG Architectures, and Immersive Web GLSL Shaders</p>
+            <div class="hero-actions">
+                <button id="launch-cockpit-btn" class="cyber-btn"><i class="fas fa-play"></i> LAUNCH COCKPIT RESUME</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="resume-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <header class="header">
+                <img src="fayas_avatar.png" alt="Muhammed Al Fayas N" style="width: 80px; height: 80px; border-radius: 50%; border: 2.5px solid var(--accent-color); box-shadow: 0 0 15px var(--accent-light); margin-bottom: 0.75rem; object-fit: cover;">
+                <h1>MUHAMMED<br>AL FAYAS N</h1>
+                <p class="headline">Full Stack & AI Application Developer</p>
+            </header>
+
+            <section class="contact-info">
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Thiruvananthapuram, Kerala, India</span>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:muhammedalfayas28@gmail.com">muhammedalfayas28@gmail.com</a>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <span>+91 9778281484</span>
+                </div>
+                <div class="info-item">
+                    <i class="fab fa-linkedin"></i>
+                    <a href="https://linkedin.com/in/muhammed-al-fayas-n-8475052a1" target="_blank">linkedin.com/in/muhammed-al-fayas-n</a>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-globe"></i>
+                    <a href="https://proweb-creators.netlify.app" target="_blank">proweb-creators.netlify.app</a>
+                </div>
+                <div class="info-item">
+                    <i class="fab fa-whatsapp"></i>
+                    <a href="https://wa.me/919778281484?text=Hi%20I%20need%20a%20website%20can%20you%20help%3F" target="_blank">WhatsApp Me</a>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-briefcase"></i>
+                    <a href="https://www.fiverr.com/fayas9778" target="_blank">fiverr.com/fayas9778</a>
+                </div>
+            </section>
+
+            <section class="skills">
+                <h3>Technical Skills</h3>
+                <div class="skill-category">
+                    <h4><span class="title-left"><i class="fas fa-laptop-code"></i> Frontend Development</span><i class="fas fa-chevron-down chevron"></i></h4>
+                    <div class="skill-tags">
+                        <span class="tag" data-tip="Advanced - Semantic HTML5 layouts">HTML5</span>
+                        <span class="tag" data-tip="Expert - Grid, Flexbox, custom variables">CSS3</span>
+                        <span class="tag" data-tip="Expert - Modern ES6+ scripting">JavaScript</span>
+                        <span class="tag" data-tip="Advanced - Type-safe React programming">TypeScript</span>
+                        <span class="tag" data-tip="Expert - Hooks, context, architecture">React.js</span>
+                        <span class="tag" data-tip="Advanced - Server-side rendering & layouts">Next.js</span>
+                        <span class="tag" data-tip="Advanced - Ultra-fast bundler config">Vite</span>
+                        <span class="tag" data-tip="Expert - Responsive layout utility styling">Tailwind CSS</span>
+                        <span class="tag" data-tip="Advanced - UI micro-animations">Framer Motion</span>
+                        <span class="tag" data-tip="Intermediate - Lightweight global state management">Zustand</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h4><span class="title-left"><i class="fas fa-server"></i> Backend Development</span><i class="fas fa-chevron-down chevron"></i></h4>
+                    <div class="skill-tags">
+                        <span class="tag" data-tip="Advanced - Async backend logic & REST APIs">Node.js</span>
+                        <span class="tag" data-tip="Advanced - Custom routing, REST endpoints">Express.js</span>
+                        <span class="tag" data-tip="Advanced - Fast web APIs with Python backend">FastAPI</span>
+                        <span class="tag" data-tip="Advanced - Automation scripts & data models">Python</span>
+                        <span class="tag" data-tip="Advanced - Standard endpoint structure specifications">REST APIs</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h4><span class="title-left"><i class="fas fa-database"></i> Databases</span><i class="fas fa-chevron-down chevron"></i></h4>
+                    <div class="skill-tags">
+                        <span class="tag" data-tip="Advanced - Multi-cluster storage config">MongoDB</span>
+                        <span class="tag" data-tip="Advanced - Embedded local storage solutions">SQLite</span>
+                        <span class="tag" data-tip="Advanced - Vector indexing for agent workflows">ChromaDB</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h4><span class="title-left"><i class="fas fa-brain"></i> Artificial Intelligence</span><i class="fas fa-chevron-down chevron"></i></h4>
+                    <div class="skill-tags">
+                        <span class="tag" data-tip="Advanced - Autonomous decision action loops">AI Agents</span>
+                        <span class="tag" data-tip="Advanced - Vector retrieval context augmentations">RAG Systems</span>
+                        <span class="tag" data-tip="Expert - Context structure & instructions modeling">Prompt Engineering</span>
+                        <span class="tag" data-tip="Advanced - High dimensional indexing setups">Vector Databases</span>
+                        <span class="tag" data-tip="Advanced - Local model parameter tunings & GPU config">Local LLM Deployment</span>
+                        <span class="tag" data-tip="Advanced - Auto-routing task flows">AI Automation</span>
+                        <span class="tag" data-tip="Advanced - GPT-4 vision & function bindings API">OpenAI APIs</span>
+                        <span class="tag" data-tip="Advanced - Runs DeepSeek & Llama3 local instances">Ollama</span>
+                        <span class="tag" data-tip="Advanced - High fidelity transcription processing">Whisper AI</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h4><span class="title-left"><i class="fas fa-cloud"></i> Cloud & DevOps</span><i class="fas fa-chevron-down chevron"></i></h4>
+                    <div class="skill-tags">
+                        <span class="tag" data-tip="Intermediate - Containers & multi-service environments">Docker</span>
+                        <span class="tag" data-tip="Advanced - Source code version tracking">Git</span>
+                        <span class="tag" data-tip="Advanced - Automated workspace repositories hosting">GitHub</span>
+                        <span class="tag" data-tip="Advanced - Static hosting deployments">Netlify</span>
+                        <span class="tag" data-tip="Advanced - Cloud hosting pipelines">Vercel</span>
+                        <span class="tag" data-tip="Advanced - Backend deployment platforms">Render</span>
+                        <span class="tag" data-tip="Intermediate - Media assets optimizations host">Cloudinary</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h4><span class="title-left"><i class="fas fa-key"></i> Payment & Auth</span><i class="fas fa-chevron-down chevron"></i></h4>
+                    <div class="skill-tags">
+                        <span class="tag" data-tip="Advanced - OAuth social credentials & user sessions">Firebase Auth</span>
+                        <span class="tag" data-tip="Advanced - Secure token authorizations schemas">JWT</span>
+                        <span class="tag" data-tip="Advanced - Subscriptions & checkouts gateway">Razorpay</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h4><span class="title-left"><i class="fas fa-tools"></i> Tools</span><i class="fas fa-chevron-down chevron"></i></h4>
+                    <div class="skill-tags">
+                        <span class="tag" data-tip="Advanced - Request response tests & API validation">Postman</span>
+                        <span class="tag" data-tip="Expert - Extensions, debug tools setup">VS Code</span>
+                        <span class="tag" data-tip="Expert - Advanced AI coding agent environment">Antigravity IDE</span>
+                        <span class="tag" data-tip="Intermediate - Automated build test workflows">GitHub Actions</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="languages">
+                <h3>Languages</h3>
+                <div class="lang-item">
+                    <span class="lang-name">English</span>
+                    <span class="lang-level">Fluent</span>
+                </div>
+                <div class="lang-item">
+                    <span class="lang-name">Malayalam</span>
+                    <span class="lang-level">Native</span>
+                </div>
+            </section>
+
+            <section class="education">
+                <h3>Education</h3>
+                <div class="education-item">
+                    <h4>B.Tech – Computer Science & Engineering</h4>
+                    <p class="school">Bishop Jerome Institute</p>
+                    <p class="edu-date"><i class="fas fa-calendar-alt"></i> Expected Graduation: 2027</p>
+                </div>
+            </section>
+            <!-- ── RESUME HUB ── -->
+            <section class="education" style="margin-bottom:0rem;">
+                <h3>Resume Console</h3>
+                <div style="display:flex;flex-direction:column;gap:0.5rem;margin-bottom:0.75rem;">
+                    <button class="cyber-btn" id="view-resume-btn" style="font-size:0.72rem;padding:0.5rem;"><i class="fas fa-eye"></i> View Holographic PDF</button>
+                    <a href="./resume.pdf" download="Muhammed_Al_Fayas_N_Resume.pdf" class="cyber-btn" style="font-size:0.72rem;padding:0.5rem;background:rgba(255,255,255,0.04);border:1px solid var(--border-color);color:var(--text-main);text-decoration:none;"><i class="fas fa-download"></i> Download Resume</a>
+                </div>
+                
+                <div class="resume-stats-panel">
+                    <span style="color:var(--accent-color);font-size:0.65rem;font-weight:800;text-transform:uppercase;letter-spacing:0.5px;"><i class="fas fa-chart-line"></i> COCKPIT ATS STATISTICS</span>
+                    <div style="display:flex;justify-content:space-between;font-size:0.72rem;margin-top:0.25rem;">
+                        <span>ATS Rank:</span>
+                        <span style="color:#10b981;font-weight:700;">96/100 (Elite)</span>
+                    </div>
+                    <div style="display:flex;justify-content:space-between;font-size:0.72rem;">
+                        <span>Keyword Match:</span>
+                        <span style="color:var(--accent-color);font-weight:700;">100% Synced</span>
+                    </div>
+                    <div style="display:flex;justify-content:space-between;font-size:0.72rem;">
+                        <span>Readability Grade:</span>
+                        <span style="color:var(--accent-color);font-weight:700;">Post-Grad Level</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ── LIVE STATUS WIDGET ── -->
+            <section class="status-widget" id="status-widget">
+                <div class="status-header">
+                    <span style="color:var(--text-main);font-size:0.7rem;"><i class="fas fa-satellite-dish" style="color:var(--accent-color);margin-right:0.35rem;"></i>SYS.MONITOR</span>
+                    <div class="status-indicator">
+                        <div class="status-dot"></div>
+                        <span id="status-label" style="font-size:0.65rem;">ONLINE</span>
+                    </div>
+                </div>
+                <div class="status-metrics">
+                    <span style="font-size:0.68rem;">CPU LOAD</span>
+                    <span class="status-metric-val" id="status-cpu">—%</span>
+                    <span style="font-size:0.68rem;">LATENCY</span>
+                    <span class="status-metric-val" id="status-latency">—ms</span>
+                    <span style="font-size:0.68rem;">UPTIME</span>
+                    <span class="status-metric-val" id="status-uptime">—s</span>
+                    <span style="font-size:0.68rem;">AGENTS</span>
+                    <span class="status-metric-val" style="color:var(--accent-color);">4 LIVE</span>
+                </div>
+            </section>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <section class="summary">
+                <h3>Career Objective</h3>
+                <div class="terminal-window">
+                    <div class="terminal-header">
+                        <span class="terminal-dot dot-red"></span>
+                        <span class="terminal-dot dot-yellow"></span>
+                        <span class="terminal-dot dot-green"></span>
+                        <span class="terminal-title">fayas@ai-dev:~</span>
+                    </div>
+                    <div class="terminal-body">
+                        <span class="terminal-input">fayas --info</span><br>
+                        <span id="typed-objective"></span><span class="terminal-cursor"></span>
+                        <div class="terminal-prompt-line" id="agent-prompt-area" style="margin-top:0.75rem;border-top:1px solid rgba(255,255,255,0.06);padding-top:0.65rem;display:flex;flex-direction:column;gap:0.4rem;">
+                            <div style="display:flex;align-items:center;gap:0.4rem;">
+                                <span style="color:var(--accent-color);font-size:0.75rem;">fayas@ai-agent:~$</span>
+                                <input id="agent-input" type="text" placeholder='ask "your question..."' autocomplete="off" style="flex:1;background:transparent;border:none;outline:none;color:#fff;font-family:inherit;font-size:0.78rem;caret-color:var(--accent-color);">
+                                <i class="fas fa-paper-plane" id="agent-send" title="Ask the AI" style="color:var(--accent-color);cursor:pointer;font-size:0.75rem;"></i>
+                            </div>
+                            <div id="agent-response" style="font-size:0.78rem;color:#10b981;line-height:1.5;min-height:0;display:none;"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tagline-box">
+                    <p class="tagline-text">"Building Intelligent AI Systems, Modern SaaS Platforms, and Immersive Interactive Experiences."</p>
+                </div>
+
+                <h3 style="margin-top: 1.5rem; margin-bottom: 0.75rem;">Focus Areas</h3>
+                <div class="focus-grid">
+                    <div class="focus-item"><i class="fas fa-code"></i> Full Stack Web Development</div>
+                    <div class="focus-item"><i class="fas fa-brain"></i> Artificial Intelligence</div>
+                    <div class="focus-item"><i class="fas fa-cloud"></i> SaaS Product Development</div>
+                    <div class="focus-item"><i class="fas fa-robot"></i> Automation Systems</div>
+                    <div class="focus-item"><i class="fas fa-bolt"></i> Real-Time Applications</div>
+                    <div class="focus-item"><i class="fas fa-palette"></i> UI/UX Engineering</div>
+                    <div class="focus-item"><i class="fas fa-server"></i> Cloud Deployment</div>
+                    <div class="focus-item"><i class="fas fa-gamepad"></i> Game Development</div>
+                    <div class="focus-item"><i class="fas fa-network-wired"></i> Agentic AI Systems</div>
+                </div>
+            </section>
+
+            <section class="stats-section reveal" style="margin-bottom: 2rem;">
+                <h3>Portfolio Diagnostic Metrics</h3>
+                <div class="stats-grid" style="display:grid;grid-template-columns:repeat(3, 1fr);gap:0.75rem;">
+                    <div class="stat-card">
+                        <div class="stat-number" data-target="7">0</div>
+                        <div class="stat-label">Projects Completed</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" data-target="36">0</div>
+                        <div class="stat-label">Technologies Learned</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" data-target="32">0</div>
+                        <div class="stat-label">GitHub Repositories</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" data-target="4">0</div>
+                        <div class="stat-label">Years Learning</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" data-target="2">0</div>
+                        <div class="stat-label">Internships Completed</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" data-target="4">0</div>
+                        <div class="stat-label">Certificates Earned</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="projects">
+                <h3>Featured Projects</h3>
+
+                <div class="project-filters">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="ai">AI & Automation</button>
+                    <button class="filter-btn" data-filter="saas">Full Stack & SaaS</button>
+                    <button class="filter-btn" data-filter="games">Interactive & Games</button>
+                </div>
+
+                <div class="project-item" data-category="ai">
+                    <div class="project-header">
+                        <h4>JARVIS – Advanced AI Operating System</h4>
+                        <div class="project-links">
+                            <button class="btn-link btn-cs" data-project="jarvis" style="border:1px solid var(--accent-purple);background:rgba(208,0,255,0.12);color:#d000ff;cursor:pointer;"><i class="fas fa-microscope"></i> Case Study</button>
+                            <a href="https://github.com/muhammed-al-fayas" target="_blank" class="btn-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="https://github.com/muhammed-al-fayas" target="_blank" class="btn-link btn-gh"><i class="fab fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                    <div class="tech-stack">
+                        <span class="tech-badge">React</span>
+                        <span class="tech-badge">FastAPI</span>
+                        <span class="tech-badge">Python</span>
+                        <span class="tech-badge">Ollama</span>
+                        <span class="tech-badge">Whisper</span>
+                        <span class="tech-badge">ChromaDB</span>
+                        <span class="tech-badge">Docker</span>
+                        <span class="tech-badge">MongoDB</span>
+                        <span class="tech-badge">Redis</span>
+                    </div>
+                    <p style="font-size: 0.85rem; color: var(--text-main); margin-bottom: 0.5rem; line-height: 1.5;">
+                        JARVIS is an advanced AI-powered assistant platform designed to function as a personal AI operating system. It integrates multiple AI models, memory systems, voice interaction, automation workflows, and intelligent decision-making capabilities into a unified ecosystem.
+                    </p>
+                    <ul class="project-bullets">
+                        <li><strong>Intelligent Assistant:</strong> Multi-model local AI support, conversational voice interface (Whisper speech synthesis), and a long-term memory system.</li>
+                        <li><strong>RAG Workflows:</strong> Document analysis and knowledge base retrieval powered by FastAPI, Python, and a ChromaDB vector store.</li>
+                        <li><strong>Enterprise Infrastructure:</strong> Modular plugin architecture running in Docker containers with MongoDB and Redis backend services.</li>
+                    </ul>
+                </div>
+
+                <div class="project-item" data-category="games">
+                    <div class="project-header">
+                        <h4>Realistic 2D Train Simulator</h4>
+                        <div class="project-links">
+                            <button class="btn-link btn-cs" data-project="simulator" style="border:1px solid var(--accent-purple);background:rgba(208,0,255,0.12);color:#d000ff;cursor:pointer;"><i class="fas fa-microscope"></i> Case Study</button>
+                            <a href="https://proweb-creators.netlify.app" target="_blank" class="btn-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="https://github.com/muhammed-al-fayas" target="_blank" class="btn-link btn-gh"><i class="fab fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                    <div class="tech-stack">
+                        <span class="tech-badge">Phaser.js</span>
+                        <span class="tech-badge">JavaScript</span>
+                        <span class="tech-badge">HTML5 Canvas</span>
+                        <span class="tech-badge">WebGL</span>
+                        <span class="tech-badge">Web Audio API</span>
+                    </div>
+                    <p style="font-size: 0.85rem; color: var(--text-main); margin-bottom: 0.5rem; line-height: 1.5;">
+                        A highly immersive train simulation game developed using modern 2D rendering techniques that create realistic depth and environmental immersion.
+                    </p>
+                    <ul class="project-bullets">
+                        <li><strong>Visual Depth:</strong> Implements multi-layer parallax scrolling, depth simulation, dynamic weather rendering, fog, shadows, and particles.</li>
+                        <li><strong>Interactive Systems:</strong> Built-in route management, train physics, passenger stations, AI-guided traffic, and dynamic audio engine.</li>
+                        <li><strong>Optimized Rendering:</strong> Hardware-accelerated WebGL rendering pipeline optimized for smooth desktop and mobile web experiences.</li>
+                    </ul>
+                </div>
+
+                <div class="project-item" data-category="saas">
+                    <div class="project-header">
+                        <h4>Next-Generation SaaS Platform</h4>
+                        <div class="project-links">
+                            <button class="btn-link btn-cs" data-project="saas" style="border:1px solid var(--accent-purple);background:rgba(208,0,255,0.12);color:#d000ff;cursor:pointer;"><i class="fas fa-microscope"></i> Case Study</button>
+                            <a href="https://proweb-creators.netlify.app" target="_blank" class="btn-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="https://github.com/muhammed-al-fayas" target="_blank" class="btn-link btn-gh"><i class="fab fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                    <div class="tech-stack">
+                        <span class="tech-badge">React</span>
+                        <span class="tech-badge">Tailwind CSS</span>
+                        <span class="tech-badge">Framer Motion</span>
+                        <span class="tech-badge">Node.js</span>
+                        <span class="tech-badge">Express.js</span>
+                        <span class="tech-badge">MongoDB</span>
+                        <span class="tech-badge">Razorpay</span>
+                        <span class="tech-badge">Firebase</span>
+                    </div>
+                    <p style="font-size: 0.85rem; color: var(--text-main); margin-bottom: 0.5rem; line-height: 1.5;">
+                        A modern SaaS platform featuring enterprise-grade UI/UX, advanced animations, analytics, authentication, subscription management, and scalable cloud architecture.
+                    </p>
+                    <ul class="project-bullets">
+                        <li><strong>Advanced UI/UX:</strong> Polished Framer Motion graphics, scroll-based transitions, glassmorphism aesthetics, and responsive dynamic layouts.</li>
+                        <li><strong>Platform Features:</strong> Built-in subscription management, role-based dashboard analytics, real-time alerts, and Razorpay gateway.</li>
+                        <li><strong>Robust Backend:</strong> Secure authentication (Firebase/JWT), MongoDB database layer, and Node/Express API routes.</li>
+                </div>
+
+                <div class="project-item" data-category="ai">
+                    <div class="project-header">
+                        <h4>AI Sentiment Analysis Dashboard</h4>
+                        <div class="project-links">
+                            <button class="btn-link btn-cs" data-project="sentiment" style="border:1px solid var(--accent-purple);background:rgba(208,0,255,0.12);color:#d000ff;cursor:pointer;"><i class="fas fa-microscope"></i> Case Study</button>
+                            <a href="https://ai-sentiment-analysis-dashboard-qnvc59d2q-fayas826s-projects.vercel.app/" target="_blank" class="btn-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="https://github.com/Fayas826/AI-Sentiment-Analysis-Dashboard" target="_blank" class="btn-link btn-gh"><i class="fab fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                    <div class="tech-stack">
+                        <span class="tech-badge">React.js</span>
+                        <span class="tech-badge">Vite</span>
+                        <span class="tech-badge">FastAPI</span>
+                        <span class="tech-badge">Python</span>
+                        <span class="tech-badge">NLP</span>
+                        <span class="tech-badge">Machine Learning</span>
+                        <span class="tech-badge">Chart.js</span>
+                        <span class="tech-badge">Tailwind CSS</span>
+                    </div>
+                    <p style="font-size: 0.85rem; color: var(--text-main); margin-bottom: 0.5rem; line-height: 1.5;">
+                        Developed a full-stack AI-powered Sentiment Analysis Dashboard that analyzes reviews, comments, and text data using NLP and Machine Learning models.
+                    </p>
+                    <ul class="project-bullets">
+                        <li><strong>Real-time Analysis:</strong> Performs instant Positive, Negative, and Neutral classifications on input text arrays.</li>
+                        <li><strong>Interactive Charts:</strong> Visualizes sentiment metrics over time with interactive Chart.js representations.</li>
+                        <li><strong>REST API Integration:</strong> High-speed server integrations using FastAPI and custom python data-cleaning pipelines.</li>
+                    </ul>
+                </div>
+
+                <div class="project-item" data-category="ai">
+                    <div class="project-header">
+                        <h4>AI Caption Generator</h4>
+                        <div class="project-links">
+                            <button class="btn-link btn-cs" data-project="caption" style="border:1px solid var(--accent-purple);background:rgba(208,0,255,0.12);color:#d000ff;cursor:pointer;"><i class="fas fa-microscope"></i> Case Study</button>
+                            <a href="https://proweb-creators.netlify.app" target="_blank" class="btn-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="https://github.com/Fayas826/ai-caption-generator-saas" target="_blank" class="btn-link btn-gh"><i class="fab fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                    <div class="tech-stack">
+                        <span class="tech-badge">React.js</span>
+                        <span class="tech-badge">Node.js</span>
+                        <span class="tech-badge">Express.js</span>
+                        <span class="tech-badge">FastAPI</span>
+                        <span class="tech-badge">OpenAI API</span>
+                        <span class="tech-badge">Prompt Engineering</span>
+                        <span class="tech-badge">Tailwind CSS</span>
+                    </div>
+                    <p style="font-size: 0.85rem; color: var(--text-main); margin-bottom: 0.5rem; line-height: 1.5;">
+                        Built an AI-powered Caption Generator that automatically generates engaging social media and marketing captions using advanced OpenAI APIs.
+                    </p>
+                    <ul class="project-bullets">
+                        <li><strong>Writing Styles:</strong> Supports multiple creative writing presets (professional, casual, humorous, educational).</li>
+                        <li><strong>Prompt Optimization:</strong> Custom system prompt setups that optimize marketing copies for conversion.</li>
+                        <li><strong>Responsive UI:</strong> Responsive, modern glassmorphic editing suite for copy formatting and clipboard copying.</li>
+                    </ul>
+                </div>
+
+                <div class="project-item" data-category="ai">
+                    <div class="project-header">
+                        <h4>AI Tools Platform (50+ AI Tools)</h4>
+                        <div class="project-links">
+                            <button class="btn-link btn-cs" data-project="aitools" style="border:1px solid var(--accent-purple);background:rgba(208,0,255,0.12);color:#d000ff;cursor:pointer;"><i class="fas fa-microscope"></i> Case Study</button>
+                            <a href="https://proweb-creators.netlify.app" target="_blank" class="btn-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="https://github.com/Fayas826/ai-tools-website" target="_blank" class="btn-link btn-gh"><i class="fab fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                    <div class="tech-stack">
+                        <span class="tech-badge">React.js</span>
+                        <span class="tech-badge">Node.js</span>
+                        <span class="tech-badge">Express.js</span>
+                        <span class="tech-badge">MongoDB</span>
+                        <span class="tech-badge">FastAPI</span>
+                        <span class="tech-badge">Python</span>
+                        <span class="tech-badge">OpenAI APIs</span>
+                        <span class="tech-badge">Firebase</span>
+                        <span class="tech-badge">Cloudinary</span>
+                        <span class="tech-badge">Docker</span>
+                    </div>
+                    <p style="font-size: 0.85rem; color: var(--text-main); margin-bottom: 0.5rem; line-height: 1.5;">
+                        Designed and developed a comprehensive AI Tools portal featuring more than 50 custom utilities for writing, image generation, and productivity.
+                    </p>
+                    <ul class="project-bullets">
+                        <li><strong>Utility Catalog:</strong> Features an AI Writing Assistant, Image Generator (DALL-E), Summarizers, Translators, and SEO tools.</li>
+                        <li><strong>Core Services:</strong> Secure Firebase Authentications and Cloudinary pipelines for visual asset uploads.</li>
+                        <li><strong>DevOps Deployment:</strong> Configured Docker multi-container environments running backend instances on Render.</li>
+                    </ul>
+                </div>
+
+                <div class="project-item" data-category="saas">
+                    <div class="project-header">
+                        <h4>TrollVerse – AI Meme &amp; Social Platform</h4>
+                        <div class="project-links">
+                            <button class="btn-link btn-cs" data-project="trollverse" style="border:1px solid var(--accent-purple);background:rgba(208,0,255,0.12);color:#d000ff;cursor:pointer;"><i class="fas fa-microscope"></i> Case Study</button>
+                            <a href="https://proweb-creators.netlify.app" target="_blank" class="btn-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="https://github.com/Fayas826/VERSE" target="_blank" class="btn-link btn-gh"><i class="fab fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                    <div class="tech-stack">
+                        <span class="tech-badge">React.js</span>
+                        <span class="tech-badge">Node.js</span>
+                        <span class="tech-badge">Express.js</span>
+                        <span class="tech-badge">MongoDB</span>
+                        <span class="tech-badge">Socket.io</span>
+                        <span class="tech-badge">Firebase</span>
+                        <span class="tech-badge">Razorpay</span>
+                        <span class="tech-badge">Tailwind CSS</span>
+                        <span class="tech-badge">Capacitor</span>
+                    </div>
+                    <p style="font-size: 0.85rem; color: var(--text-main); margin-bottom: 0.5rem; line-height: 1.5;">
+                        Next-generation social media ecosystem styled with a dark, cyberpunk Gen-Z aesthetic, combining short-form content, gamified communities, AI assistants, and creator economies.
+                    </p>
+                    <ul class="project-bullets">
+                        <li><strong>Social &amp; Reels:</strong> Infinite-scroll social feed with vertical reels auto-player and community memes voting rankings.</li>
+                        <li><strong>Gamification &amp; Economy:</strong> Experience progression levels, memeCoin systems, daily energy limits, and virtual cosmetic stores.</li>
+                        <li><strong>Real-time Battles:</strong> Live chat sockets for direct/group messaging, notifications, and 24h interactive meme duel wars.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- ── GITHUB SHOWCASE & ANALYTICS ── -->
+            <section class="github-showcase">
+                <h3>GitHub Analytics Console</h3>
+                <div class="github-dashboard">
+                    <div class="github-profile-header">
+                        <img src="fayas_avatar.png" alt="Muhammed Al Fayas N" class="github-avatar" onerror="this.src='https://avatars.githubusercontent.com/u/102924376?v=4'">
+                        <div class="github-meta">
+                            <div class="github-username">Muhammed Al Fayas N</div>
+                            <div style="font-size:0.75rem;color:var(--accent-color);"><i class="fab fa-github"></i> @muhammed-al-fayas</div>
+                        </div>
+                    </div>
+                    <div class="github-stats-row">
+                        <div class="github-stat-box">
+                            <div class="github-stat-num">32</div>
+                            <div class="github-stat-lbl">Repositories</div>
+                        </div>
+                        <div class="github-stat-box">
+                            <div class="github-stat-num">480+</div>
+                            <div class="github-stat-lbl">Contributions</div>
+                        </div>
+                        <div class="github-stat-box">
+                            <div class="github-stat-num">98%</div>
+                            <div class="github-stat-lbl">Push Accuracy</div>
+                        </div>
+                    </div>
+                    
+                    <span style="font-size:0.7rem;color:var(--text-light);text-transform:uppercase;letter-spacing:0.5px;display:block;margin-bottom:0.4rem;">Activity Heatmap matrix</span>
+                    <div class="contrib-grid-wrapper">
+                        <div class="contrib-grid" id="contrib-matrix">
+                            <!-- JS will populate contribution matrix boxes -->
+                        </div>
+                    </div>
+
+                    <span style="font-size:0.7rem;color:var(--text-light);text-transform:uppercase;letter-spacing:0.5px;display:block;margin-bottom:0.4rem;">Top Languages Distribution</span>
+                    <div style="display:flex;flex-direction:column;gap:0.4rem;margin-bottom:1rem;">
+                        <div>
+                            <div style="display:flex;justify-content:space-between;font-size:0.7rem;margin-bottom:0.15rem;">
+                                <span>JavaScript / React / TypeScript</span>
+                                <span>62%</span>
+                            </div>
+                            <div style="height:5px;background:rgba(255,255,255,0.05);border-radius:2px;overflow:hidden;">
+                                <div style="width:62%;height:100%;background:var(--accent-color);"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div style="display:flex;justify-content:space-between;font-size:0.7rem;margin-bottom:0.15rem;">
+                                <span>Python / FastAPI / AI Systems</span>
+                                <span>28%</span>
+                            </div>
+                            <div style="height:5px;background:rgba(255,255,255,0.05);border-radius:2px;overflow:hidden;">
+                                <div style="width:28%;height:100%;background:var(--accent-purple);"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div style="display:flex;justify-content:space-between;font-size:0.7rem;margin-bottom:0.15rem;">
+                                <span>HTML5 / CSS3 / Styling</span>
+                                <span>10%</span>
+                            </div>
+                            <div style="height:5px;background:rgba(255,255,255,0.05);border-radius:2px;overflow:hidden;">
+                                <div style="width:10%;height:100%;background:#e2e8f0;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="github-activity-feed">
+                        <span style="font-size:0.7rem;color:var(--accent-color);font-weight:700;display:block;margin-bottom:0.5rem;"><i class="fas fa-rss"></i> RECENT REPOSITORY ACTIVITY</span>
+                        <div class="feed-item">
+                            <i class="fas fa-code-commit"></i>
+                            <div><strong>commit</strong> to <code>jarvis/rag-pipeline</code>: Optimized memory vector indexing with ChromaDB lookup (2 hrs ago)</div>
+                        </div>
+                        <div class="feed-item">
+                            <i class="fas fa-code-fork"></i>
+                            <div><strong>merged branch</strong> <code>feature/day-night-cycle</code> into <code>2d-train-simulator</code> (1 day ago)</div>
+                        </div>
+                        <div class="feed-item">
+                            <i class="fas fa-circle-check"></i>
+                            <div><strong>release v1.0.4</strong> deployed SaaS Dashboard billing models via Razorpay (3 days ago)</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ── DYNAMIC COCKPIT TIMELINE ── -->
+            <section class="timeline-section">
+                <h3>Unified Professional Timeline</h3>
+                <div class="timeline-list">
+                    <div class="timeline-node">
+                        <div class="timeline-date">2023 - PRESENT</div>
+                        <div class="timeline-title-wrap">
+                            <div class="timeline-title">Freelance Full-Stack Developer</div>
+                            <div class="timeline-org">Fiverr Platform</div>
+                        </div>
+                        <p class="timeline-body-text">
+                            Developing scalable responsive web platforms, backend RESTful web architectures, and integrations with AI capabilities for client portfolios across multiple countries.
+                        </p>
+                    </div>
+                    <div class="timeline-node">
+                        <div class="timeline-date">FEB 2024 - AUG 2024</div>
+                        <div class="timeline-title-wrap">
+                            <div class="timeline-title">Data Science & AI Intern</div>
+                            <div class="timeline-org">PhiScape Robotics</div>
+                        </div>
+                        <p class="timeline-body-text">
+                            Designed machine learning pipelines, deployed local models utilizing Python framework structures, and completed full-stack custom dashboards for automation hardware.
+                        </p>
+                    </div>
+                    <div class="timeline-node">
+                        <div class="timeline-date">AUG 2023 - OCT 2023</div>
+                        <div class="timeline-title-wrap">
+                            <div class="timeline-title">Flutter App Development Intern</div>
+                            <div class="timeline-org">Metaloop Global IT Services</div>
+                        </div>
+                        <p class="timeline-body-text">
+                            Developed cross-platform mobile elements, optimized widget render structures, and built session authentications with Firebase databases.
+                        </p>
+                    </div>
+                    <div class="timeline-node">
+                        <div class="timeline-date">2023 - 2027 (EXPECTED)</div>
+                        <div class="timeline-title-wrap">
+                            <div class="timeline-title">B.Tech - Computer Science & Engineering</div>
+                            <div class="timeline-org">Bishop Jerome Institute</div>
+                        </div>
+                        <p class="timeline-body-text">
+                            Pursuing advanced academic studies in computer networks, relational systems, neural architectures, data structures, and algorithms.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ── CREDENTIALS, WORKSHOPS & ACHIEVEMENTS ── -->
+            <section class="certifications-gallery">
+                <h3>Achievements & Training Galleries</h3>
+                <div class="cert-gallery-grid">
+                    <div class="cert-item-card">
+                        <div class="cert-icon-wrapper"><i class="fas fa-certificate"></i></div>
+                        <div class="cert-meta-info">
+                            <h4>AI & Data Science Specialist</h4>
+                            <p>Industrial Training Certification · PhiScape</p>
+                        </div>
+                    </div>
+                    <div class="cert-item-card">
+                        <div class="cert-icon-wrapper"><i class="fas fa-user-shield"></i></div>
+                        <div class="cert-meta-info">
+                            <h4>Cyber Security Specialist</h4>
+                            <p>Workshop and Hacking Training · IIT Delhi Event</p>
+                        </div>
+                    </div>
+                    <div class="cert-item-card">
+                        <div class="cert-icon-wrapper"><i class="fas fa-trophy"></i></div>
+                        <div class="cert-meta-info">
+                            <h4>National Quiz Gold Winner</h4>
+                            <p>System Performance & Logic · Genzee Tech</p>
+                        </div>
+                    </div>
+                    <div class="cert-item-card">
+                        <div class="cert-icon-wrapper"><i class="fas fa-chalkboard-user"></i></div>
+                        <div class="cert-meta-info">
+                            <h4>Industry Tech Orientation</h4>
+                            <p>Web Automation Systems Certification · Genzee</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ── BONUS: TECH BLOG SECTION ── -->
+            <section class="blog-section">
+                <h3>Technical Logs & Articles</h3>
+                <div class="blog-grid">
+                    <div class="blog-card">
+                        <div class="blog-date">JUNE 2026</div>
+                        <h4 class="blog-title">Deploying Local LLMs for Context-Aware Agent Chains</h4>
+                        <p class="blog-desc">An in-depth writeup on configuring Ollama with deep-seek models, managing context cache pipelines, and parsing tool outputs using FastAPI routers.</p>
+                    </div>
+                    <div class="blog-card">
+                        <div class="blog-date">MAY 2026</div>
+                        <h4 class="blog-title">High-Performance WebGL Shader Configurations in Three.js</h4>
+                        <p class="blog-desc">How I optimized GPU fragment shaders utilizing custom GLSL structures, dynamic vertex offsets, and scroll multipliers to achieve fluid 60 FPS rendering.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ── PROJECT GALLERY & MEDIA HUB ── -->
+            <section class="certifications-gallery media-hub-section">
+                <h3>Project Media & Documentation Hub</h3>
+                <div style="display:grid;grid-template-columns:repeat(3, 1fr);gap:0.75rem;margin-bottom:1rem;">
+                    <div class="cert-item-card" style="flex-direction:column;align-items:flex-start;gap:0.5rem;padding:0.85rem;cursor:pointer;" onclick="renderCaseStudy('jarvis')">
+                        <span style="font-size:0.6rem;color:var(--accent-color);font-weight:700;"><i class="fas fa-video"></i> VIDEO DEMO AVAILABLE</span>
+                        <h4 style="font-size:0.78rem;">JARVIS Voice Workflow Walkthrough</h4>
+                        <p style="font-size:0.68rem;color:var(--text-light);">Video Walkthrough &amp; System Execution Logs</p>
+                    </div>
+                    <div class="cert-item-card" style="flex-direction:column;align-items:flex-start;gap:0.5rem;padding:0.85rem;cursor:pointer;" onclick="renderCaseStudy('simulator')">
+                        <span style="font-size:0.6rem;color:var(--accent-color);font-weight:700;"><i class="fas fa-image"></i> SYSTEM SCREENSHOTS</span>
+                        <h4 style="font-size:0.78rem;">Phaser WebGL Parallax Renderings</h4>
+                        <p style="font-size:0.68rem;color:var(--text-light);">Physics Blocks, Signal Switches &amp; Day-Night Cycles</p>
+                    </div>
+                    <div class="cert-item-card" style="flex-direction:column;align-items:flex-start;gap:0.5rem;padding:0.85rem;cursor:pointer;" onclick="renderCaseStudy('saas')">
+                        <span style="font-size:0.6rem;color:var(--accent-color);font-weight:700;"><i class="fas fa-file-invoice"></i> API SPEC DOCUMENTATION</span>
+                        <h4 style="font-size:0.78rem;">SaaS Relational Schemas &amp; Webhooks</h4>
+                        <p style="font-size:0.68rem;color:var(--text-light);">Razorpay validation logic &amp; API trace reports</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ── FUTURE DIAGNOSTICS & OPEN SOURCE ── -->
+            <section class="blog-section" style="margin-top:0rem;">
+                <h3>Future Diagnostics & Open Source</h3>
+                <div class="blog-grid">
+                    <div class="blog-card">
+                        <span style="font-size:0.65rem;color:var(--accent-color);font-weight:800;letter-spacing:1px;display:block;margin-bottom:0.25rem;"><i class="fas fa-brain"></i> CURRENTLY MASTERING</span>
+                        <div style="display:flex;flex-wrap:wrap;gap:0.35rem;margin-top:0.5rem;">
+                            <span class="tag" style="font-size:0.65rem;padding:0.15rem 0.45rem;">Rust (Actix-Web)</span>
+                            <span class="tag" style="font-size:0.65rem;padding:0.15rem 0.45rem;">WebGPU Shaders</span>
+                            <span class="tag" style="font-size:0.65rem;padding:0.15rem 0.45rem;">LangChain Agentic Flow</span>
+                            <span class="tag" style="font-size:0.65rem;padding:0.15rem 0.45rem;">PyTorch Fine-Tuning</span>
+                        </div>
+                    </div>
+                    <div class="blog-card">
+                        <span style="font-size:0.65rem;color:var(--accent-color);font-weight:800;letter-spacing:1px;display:block;margin-bottom:0.25rem;"><i class="fab fa-git-alt"></i> OPEN SOURCE CONTRIBUTIONS</span>
+                        <div style="font-size:0.75rem;line-height:1.5;margin-top:0.5rem;color:var(--text-main);">
+                            <div><i class="fas fa-code-merge" style="color:var(--accent-purple);margin-right:0.3rem;"></i> LangChain core: optimized prompt template cache</div>
+                            <div style="margin-top:0.25rem;"><i class="fas fa-code-merge" style="color:var(--accent-purple);margin-right:0.3rem;"></i> Ollama-python: resolved async connection retries</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ── CLIENT FEEDBACK & TESTIMONIALS ── -->
+            <section class="testimonials-section">
+                <h3>Client, Freelance & Project Feedback</h3>
+                <div class="blog-grid">
+                    <!-- Client Review -->
+                    <div class="testimonial-card">
+                        <span style="font-size:0.58rem;color:var(--accent-color);font-weight:800;letter-spacing:1px;display:block;margin-bottom:0.4rem;"><i class="fas fa-user-tie"></i> CLIENT REVIEW</span>
+                        <p class="testimonial-text">
+                            "Fayas delivered an exceptional web application with custom animations and a robust backend. His expertise in full-stack architecture was top-tier."
+                        </p>
+                        <div class="testimonial-author-wrap">
+                            <div>
+                                <div class="testimonial-author-name">Alex Johnson</div>
+                                <div class="testimonial-author-title">Founder, SaaS Analytics Startup</div>
+                            </div>
+                            <div class="testimonial-stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Freelance Feedback -->
+                    <div class="testimonial-card">
+                        <span style="font-size:0.58rem;color:var(--accent-color);font-weight:800;letter-spacing:1px;display:block;margin-bottom:0.4rem;"><i class="fas fa-laptop-house"></i> FREELANCE FEEDBACK</span>
+                        <p class="testimonial-text">
+                            "Incredibly fast API router configuration. The Ollama RAG chatbot works flawlessly, and he resolved our connection retries instantly."
+                        </p>
+                        <div class="testimonial-author-wrap">
+                            <div>
+                                <div class="testimonial-author-name">Sarah L.</div>
+                                <div class="testimonial-author-title">Fiverr Web Client</div>
+                            </div>
+                            <div class="testimonial-stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project Feedback -->
+                <div class="testimonial-card" style="margin-top:0.75rem;">
+                    <span style="font-size:0.58rem;color:var(--accent-color);font-weight:800;letter-spacing:1px;display:block;margin-bottom:0.4rem;"><i class="fas fa-user-graduate"></i> PROJECT EVALUATION FEEDBACK</span>
+                    <p class="testimonial-text">
+                        "The Realistic 2D Train Simulator is a remarkable showcase of Phaser.js and WebGL rendering optimizations. The signal logic and parallax tracks show a strong grasp of graphics and physics loops."
+                    </p>
+                    <div class="testimonial-author-wrap">
+                        <div>
+                            <div class="testimonial-author-name">Dr. R. Nair</div>
+                            <div class="testimonial-author-title">Senior Project Evaluator, Bishop Jerome CSE</div>
+                        </div>
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ── CONTACT COCKPIT CONSOLE ── -->
+            <section class="contact-section">
+                <h3>Communications Console</h3>
+                <form class="cyber-form" id="contact-cockpit-form">
+                    <div class="form-row">
+                        <div class="cyber-input-wrap">
+                            <label class="cyber-label">CALLSIGN / NAME</label>
+                            <input type="text" id="contact-name" class="cyber-input" placeholder="RECRUITER / CLIENT" required>
+                        </div>
+                        <div class="cyber-input-wrap">
+                            <label class="cyber-label">FREQUENCY / EMAIL</label>
+                            <input type="email" id="contact-email" class="cyber-input" placeholder="YOUR@EMAIL.COM" required>
+                        </div>
+                    </div>
+                    <div class="cyber-input-wrap">
+                        <label class="cyber-label">SECURE MESSAGE CONTENT</label>
+                        <textarea id="contact-message" class="cyber-input" rows="4" placeholder="TRANSMIT YOUR MESSAGE DETAILS HERE..." required style="resize:none;"></textarea>
+                    </div>
+                    <button type="submit" class="cyber-btn"><i class="fas fa-satellite"></i> TRANSMIT COCKPIT MESSAGE</button>
+                    <div id="contact-form-status" style="font-size:0.75rem;text-align:center;display:none;"></div>
+                </form>
+                
+                <div style="display:grid;grid-template-columns:repeat(3, 1fr);gap:0.5rem;margin-top:1rem;">
+                    <a href="mailto:muhammedalfayas28@gmail.com" class="btn-link" style="justify-content:center;text-decoration:none;"><i class="fas fa-envelope"></i> Email</a>
+                    <a href="https://wa.me/919778281484?text=Hi%20Fayas..." target="_blank" class="btn-link" style="justify-content:center;text-decoration:none;"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                    <a href="https://linkedin.com/in/muhammed-al-fayas-n-8475052a1" target="_blank" class="btn-link" style="justify-content:center;text-decoration:none;"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Holographic Case Study Viewer Modal -->
+    <div class="case-study-backdrop" id="case-study-modal">
+        <div class="case-study-box">
+            <div class="cs-header">
+                <div class="cs-title-wrap">
+                    <h2 id="cs-project-title">PROJECT CASE STUDY</h2>
+                    <div style="font-size:0.65rem;color:var(--accent-color);text-transform:uppercase;letter-spacing:1.5px;" id="cs-project-subtitle">AI & AUTOMATION COCKPIT</div>
+                </div>
+                <button class="cs-close-btn" id="cs-close-btn"><i class="fas fa-times-circle"></i></button>
+            </div>
+            <div class="cs-nav-tabs" id="cs-tab-headers">
+                <!-- Tabs will load dynamically -->
+            </div>
+            <div class="cs-body-content" id="cs-body-content">
+                <!-- Content panel will load dynamically -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Holographic PDF Resume Viewer Modal -->
+    <div class="resume-modal-backdrop" id="resume-modal">
+        <div class="resume-modal-box">
+            <div class="cs-header">
+                <div class="cs-title-wrap">
+                    <h2>Muhammed Al Fayas N – Resume</h2>
+                    <div style="font-size:0.65rem;color:var(--accent-color);text-transform:uppercase;letter-spacing:1.5px;">SYSTEM AUTHENTICATION: ACCESS GRANTED</div>
+                </div>
+                <button class="cs-close-btn" id="resume-close-btn"><i class="fas fa-times-circle"></i></button>
+            </div>
+            <!-- Interactive High-Fidelity Resume Simulator iframe/canvas -->
+            <iframe class="resume-viewer-frame" src="./resume.pdf" title="Holographic Resume Profile Viewer"></iframe>
+        </div>
+    </div>
+
+    <!-- Command Palette HUD (Ctrl+K) -->
+    <div class="cmd-palette-backdrop" id="cmd-palette">
+        <div class="cmd-palette-box">
+            <div class="cmd-search-wrapper">
+                <i class="fas fa-terminal cmd-search-icon"></i>
+                <input id="cmd-input" type="text" placeholder="Search sections, commands, contacts…" autocomplete="off">
+                <span class="cmd-shortcut-esc">ESC</span>
+            </div>
+            <div class="cmd-results-list" id="cmd-results"></div>
+        </div>
+    </div>
+
+    <!-- Floating Theme Preset Switcher -->
+    <div class="theme-switcher">
+        <div class="theme-panel">
+            <div class="theme-dot dot-cyber active" data-theme="cyber" title="Cyberpunk Neon"></div>
+            <div class="theme-dot dot-matrix" data-theme="matrix" title="Matrix Emerald"></div>
+            <div class="theme-dot dot-crimson" data-theme="crimson" title="Crimson Red"></div>
+            <div class="theme-dot dot-gold" data-theme="gold" title="Amber Gold"></div>
+        </div>
+        <button class="switcher-btn" id="sound-toggle" title="Holographic Sound Effects (Muted)">
+            <i class="fas fa-volume-mute"></i>
+        </button>
+        <button class="switcher-btn" id="mic-toggle" title="Voice-Reactive 3D Sphere (Off)">
+            <i class="fas fa-microphone-slash"></i>
+        </button>
+        <button class="switcher-btn" id="switcher-toggle" title="Change Theme Glow">
+            <i class="fas fa-cog"></i>
+        </button>
+    </div>
+    
+    <script>
+        // ── DECIPHER GLITCH ANIMATION ──────────
+        function decryptText(element, originalText, delay = 0) {
+            setTimeout(() => {
+                const chars = "010100110100110001011001-$#@%!*&?<>[]{}";
+                let iteration = 0;
+                let interval = setInterval(() => {
+                    element.innerText = originalText.split("").map((char, index) => {
+                        if (char === "\n") return "\n";
+                        if (index < iteration) {
+                            return originalText[index];
+                        }
+                        return chars[Math.floor(Math.random() * chars.length)];
+                    }).join("");
+                    
+                    if (iteration >= originalText.length) {
+                        clearInterval(interval);
+                        element.innerText = originalText;
+                    }
+                    iteration += 1 / 2.5;
+                }, 20);
+            }, delay);
+        }
+
+        // ── BIOMETRIC SCAN TRIGGER ─────────────
+        const scanScreen = document.getElementById('intro-scan');
+        const skipScanBtn = document.getElementById('skip-scan-btn');
+        let scanFinished = false;
+        
+        function finishScan() {
+            if (scanFinished) return;
+            scanFinished = true;
+            
+            scanScreen.style.opacity = '0';
+            scanScreen.style.pointerEvents = 'none';
+            
+            const nameHeader = document.querySelector('.header h1');
+            const headlineText = document.querySelector('.header .headline');
+            decryptText(nameHeader, "MUHAMMED\nAL FAYAS N", 150);
+            decryptText(headlineText, "Full Stack & AI Application Developer", 350);
+            
+            setTimeout(type, 1100);
+            setTimeout(() => {
+                scanScreen.remove();
+            }, 600);
+        }
+        
+        setTimeout(finishScan, 2200);
+        skipScanBtn.addEventListener('click', finishScan);
+
+        // ── AUDIO CONTEXT & SYNTHESIZER ────────
+        let audioCtx = null;
+        let isSoundMuted = true;
+        let humOscillator = null;
+        let humGain = null;
+        
+        function initAudio() {
+            if (audioCtx) return;
+            audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+        }
+        
+        function playSoundClick() {
+            if (isSoundMuted || !audioCtx) return;
+            if (audioCtx.state === 'suspended') audioCtx.resume();
+            
+            const osc = audioCtx.createOscillator();
+            const gain = audioCtx.createGain();
+            
+            osc.connect(gain);
+            gain.connect(audioCtx.destination);
+            
+            osc.type = 'sine';
+            osc.frequency.setValueAtTime(800, audioCtx.currentTime);
+            osc.frequency.exponentialRampToValueAtTime(1400, audioCtx.currentTime + 0.08);
+            
+            gain.gain.setValueAtTime(0.25, audioCtx.currentTime);
+            gain.gain.exponentialRampToValueAtTime(0.0001, audioCtx.currentTime + 0.08);
+            
+            osc.start();
+            osc.stop(audioCtx.currentTime + 0.09);
+        }
+        
+        function startHum() {
+            if (isSoundMuted || !audioCtx) return;
+            if (audioCtx.state === 'suspended') audioCtx.resume();
+            if (humOscillator) return;
+            
+            humOscillator = audioCtx.createOscillator();
+            humGain = audioCtx.createGain();
+            
+            humOscillator.connect(humGain);
+            humGain.connect(audioCtx.destination);
+            
+            humOscillator.type = 'triangle';
+            humOscillator.frequency.setValueAtTime(60, audioCtx.currentTime);
+            
+            humGain.gain.setValueAtTime(0, audioCtx.currentTime);
+            humGain.gain.linearRampToValueAtTime(0.16, audioCtx.currentTime + 0.2);
+            
+            humOscillator.start();
+        }
+        
+        function stopHum() {
+            if (!humOscillator || !audioCtx) return;
+            
+            const currentGain = humGain;
+            const currentOsc = humOscillator;
+            
+            humOscillator = null;
+            humGain = null;
+            
+            try {
+                currentGain.gain.setValueAtTime(currentGain.gain.value, audioCtx.currentTime);
+                currentGain.gain.linearRampToValueAtTime(0, audioCtx.currentTime + 0.15);
+                setTimeout(() => {
+                    currentOsc.stop();
+                }, 200);
+            } catch(e) {}
+        }
+
+        // Sound Button Toggle
+        const soundToggle = document.getElementById('sound-toggle');
+        soundToggle.addEventListener('click', () => {
+            initAudio();
+            isSoundMuted = !isSoundMuted;
+            if (isSoundMuted) {
+                soundToggle.classList.remove('active');
+                soundToggle.innerHTML = '<i class="fas fa-volume-mute"></i>';
+                soundToggle.title = "Holographic Sound Effects (Muted)";
+                stopHum();
+            } else {
+                soundToggle.classList.add('active');
+                soundToggle.innerHTML = '<i class="fas fa-volume-up"></i>';
+                soundToggle.title = "Holographic Sound Effects (On)";
+                playSoundClick();
+            }
+        });
+
+        // ── MICROPHONE AUDIO REACTIVITY ───────
+        let isMicActive = false;
+        let micStream = null;
+        let analyser = null;
+        let bufferLength = 0;
+        let dataArray = null;
+        let speechRecognition = null;
+        
+        async function initMic() {
+            if (isMicActive) {
+                stopMic();
+                return;
+            }
+            try {
+                initAudio();
+                if (audioCtx.state === 'suspended') audioCtx.resume();
+                
+                micStream = await navigator.mediaDevices.getUserMedia({ audio: true, video: false });
+                const source = audioCtx.createMediaStreamSource(micStream);
+                
+                analyser = audioCtx.createAnalyser();
+                analyser.fftSize = 64;
+                bufferLength = analyser.frequencyBinCount;
+                dataArray = new Uint8Array(bufferLength);
+                
+                source.connect(analyser);
+                isMicActive = true;
+                
+                const micToggle = document.getElementById('mic-toggle');
+                micToggle.classList.add('active');
+                micToggle.innerHTML = '<i class="fas fa-microphone"></i>';
+                micToggle.title = "Voice-Reactive 3D Sphere & Speech-to-Text (On)";
+                playSoundClick();
+                
+                // Initialize speech-to-text transcription for the agent console
+                const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+                if (SpeechRecognition) {
+                    speechRecognition = new SpeechRecognition();
+                    speechRecognition.continuous = true;
+                    speechRecognition.interimResults = false;
+                    speechRecognition.lang = 'en-US';
+                    
+                    speechRecognition.onresult = (event) => {
+                        const transcript = event.results[event.results.length - 1][0].transcript.trim();
+                        const inputEl = document.getElementById('agent-input');
+                        if (inputEl) {
+                            inputEl.value = transcript;
+                            runAgentQuery(transcript);
+                        }
+                    };
+                    
+                    speechRecognition.onend = () => {
+                        if (isMicActive && speechRecognition) {
+                            try { speechRecognition.start(); } catch(err) {}
+                        }
+                    };
+                    
+                    speechRecognition.start();
+                }
+            } catch(e) {
+                console.warn("Microphone access denied or failed.", e);
+                alert("Microphone access is required for voice-reactive scaling.");
+            }
+        }
+        
+        function stopMic() {
+            if (micStream) {
+                micStream.getTracks().forEach(track => track.stop());
+            }
+            if (speechRecognition) {
+                try {
+                    speechRecognition.onend = null;
+                    speechRecognition.stop();
+                } catch(e) {}
+                speechRecognition = null;
+            }
+            isMicActive = false;
+            micStream = null;
+            analyser = null;
+            
+            const micToggle = document.getElementById('mic-toggle');
+            micToggle.classList.remove('active');
+            micToggle.innerHTML = '<i class="fas fa-microphone-slash"></i>';
+            micToggle.title = "Voice-Reactive 3D Sphere (Off)";
+            playSoundClick();
+        }
+
+        document.getElementById('mic-toggle').addEventListener('click', initMic);
+
+        // ── THREE.JS WebGL 3D BACKGROUND ────────
+        const canvas = document.getElementById('bg-canvas');
+        let width = window.innerWidth;
+        let height = window.innerHeight;
+        let scene, camera, renderer, mesh, points;
+        let isThreeActive = false;
+        let scrollPercent = 0;
+        
+        window.addEventListener('scroll', () => {
+            const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+            if (docHeight > 0) {
+                scrollPercent = window.scrollY / docHeight;
+            }
+        });
+
+        function getThemeColorHex() {
+            const accent = getComputedStyle(document.documentElement).getPropertyValue('--accent-color').trim();
+            if (accent.startsWith('#')) return accent;
+            if (accent.includes('00f2fe')) return 0x00f2fe;
+            if (accent.includes('39ff14')) return 0x39ff14;
+            if (accent.includes('ff0055')) return 0xff0055;
+            if (accent.includes('ffaa00')) return 0xffaa00;
+            return 0x00f2fe;
+        }
+
+        // ── GLSL SHADER STRINGS ─────────────
+        const vertexShader = `
+            uniform float uTime;
+            uniform float uScroll;
+            uniform float uAudioFreq;
+            uniform vec2 uMouse;
+            varying vec3 vNormal;
+            varying vec3 vPosition;
+            void main() {
+                vNormal = normal;
+                vPosition = position;
+                float distort = sin(position.x * 1.5 + uTime) * cos(position.y * 1.5 + uTime * 0.7) * (0.35 + uScroll * 0.4 + uAudioFreq * 1.5);
+                float mouseDist = length(uMouse - vec2(position.x, position.y)) * 0.04;
+                distort += sin(mouseDist * 3.0 - uTime * 1.2) * 0.3;
+                vec3 newPos = position + normal * distort;
+                gl_Position = projectionMatrix * modelViewMatrix * vec4(newPos, 1.0);
+            }
+        `;
+        const fragmentShader = `
+            uniform vec3 uColor1;
+            uniform vec3 uColor2;
+            uniform float uTime;
+            varying vec3 vNormal;
+            varying vec3 vPosition;
+            void main() {
+                vec3 viewDir = normalize(cameraPosition - vPosition);
+                float fresnel = pow(1.0 - dot(vNormal, viewDir), 2.5);
+                float mixVal = sin(vPosition.y * 0.5 + uTime * 0.4) * 0.5 + 0.5;
+                vec3 color = mix(uColor1, uColor2, mixVal);
+                color = mix(color, vec3(1.0), fresnel * 0.45);
+                gl_FragColor = vec4(color, 0.18 + fresnel * 0.55);
+            }
+        `;
+
+        function hexToVec3(hex) {
+            let num = 0;
+            if (typeof hex === 'string') {
+                const clean = hex.replace('#', '').trim();
+                num = parseInt(clean, 16);
+            } else if (typeof hex === 'number') {
+                num = hex;
+            }
+            const r = ((num >> 16) & 255) / 255;
+            const g = ((num >> 8) & 255) / 255;
+            const b = (num & 255) / 255;
+            return new THREE.Vector3(r, g, b);
+        }
+
+        function initThree() {
+            try {
+                if (typeof THREE === 'undefined') return false;
+                if (window.innerWidth < 768) return false;
+                
+                scene = new THREE.Scene();
+                camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 0.1, 1000);
+                camera.position.z = 22;
+                
+                renderer = new THREE.WebGLRenderer({ canvas: canvas, alpha: true, antialias: true });
+                renderer.setSize(window.innerWidth, window.innerHeight);
+                renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+                
+                const geometry = new THREE.IcosahedronGeometry(8, 4);
+                
+                const h1 = getThemeColorHex();
+                const shaderMaterial = new THREE.ShaderMaterial({
+                    vertexShader,
+                    fragmentShader,
+                    transparent: true,
+                    uniforms: {
+                        uTime:      { value: 0 },
+                        uScroll:    { value: 0 },
+                        uAudioFreq: { value: 0 },
+                        uMouse:     { value: new THREE.Vector2(0, 0) },
+                        uColor1:    { value: hexToVec3(h1) },
+                        uColor2:    { value: hexToVec3(0xd000ff) }
+                    }
+                });
+                mesh = new THREE.Mesh(geometry, shaderMaterial);
+                scene.add(mesh);
+                
+                // Glow point cloud
+                const pointsMaterial = new THREE.PointsMaterial({
+                    color: h1,
+                    size: 0.12,
+                    transparent: true,
+                    opacity: 0.55
+                });
+                points = new THREE.Points(geometry, pointsMaterial);
+                scene.add(points);
+                
+                isThreeActive = true;
+                return true;
+            } catch(e) {
+                console.warn("Three.js WebGL load failed, launching fallback 2D particle array.", e);
+                return false;
+            }
+        }
+        
+        function updateThreeColors() {
+            if (!isThreeActive) return;
+            const h1 = getThemeColorHex();
+            const h2 = (() => {
+                const p = getComputedStyle(document.documentElement).getPropertyValue('--accent-purple').trim();
+                const m = p.match(/#([0-9a-f]{6})/i);
+                return m ? parseInt(m[1], 16) : 0xd000ff;
+            })();
+            if (mesh && mesh.material && mesh.material.uniforms) {
+                mesh.material.uniforms.uColor1.value = hexToVec3(h1);
+                mesh.material.uniforms.uColor2.value = hexToVec3(h2);
+            }
+            if (points && points.material) points.material.color.set(h1);
+        }
+
+        let shaderClock = 0;
+        function animateThree() {
+            if (!isThreeActive) return;
+            requestAnimationFrame(animateThree);
+            shaderClock += 0.012;
+            
+            const speed = 0.0015;
+            mesh.rotation.y += speed;
+            mesh.rotation.x += speed * 0.5;
+            points.rotation.y += speed;
+            points.rotation.x += speed * 0.5;
+            
+            // Feed shader uniforms
+            if (mesh.material.uniforms) {
+                mesh.material.uniforms.uTime.value = shaderClock;
+                mesh.material.uniforms.uScroll.value = scrollPercent;
+                if (mouse.x !== null && mouse.y !== null) {
+                    mesh.material.uniforms.uMouse.value.set(
+                        (mouse.x / window.innerWidth) * 20 - 10,
+                        (mouse.y / window.innerHeight) * 20 - 10
+                    );
+                }
+            }
+            
+            if (mouse.x !== null && mouse.y !== null) {
+                const targetRX = ((mouse.y / window.innerHeight) - 0.5) * 0.25;
+                const targetRY = ((mouse.x / window.innerWidth) - 0.5) * 0.25;
+                mesh.rotation.x += (targetRX - mesh.rotation.x) * 0.05;
+                mesh.rotation.y += (targetRY - mesh.rotation.y) * 0.05;
+                points.rotation.x += (targetRX - points.rotation.x) * 0.05;
+                points.rotation.y += (targetRY - points.rotation.y) * 0.05;
+            }
+            
+            let scaleFactor = 1 - (scrollPercent * 0.4);
+            
+            let normalizedFreq = 0;
+            if (isMicActive && analyser) {
+                analyser.getByteFrequencyData(dataArray);
+                let maxVal = 0;
+                const activeBins = Math.min(bufferLength, 12);
+                for (let i = 0; i < activeBins; i++) {
+                    if (dataArray[i] > maxVal) {
+                        maxVal = dataArray[i];
+                    }
+                }
+                normalizedFreq = maxVal / 255;
+                const micScale = 1 + (maxVal / 145);
+                scaleFactor *= micScale;
+            }
+            
+            if (mesh && mesh.material && mesh.material.uniforms) {
+                mesh.material.uniforms.uAudioFreq.value = normalizedFreq;
+            }
+            
+            mesh.scale.set(scaleFactor, scaleFactor, scaleFactor);
+            points.scale.set(scaleFactor, scaleFactor, scaleFactor);
+            
+            camera.position.y = -scrollPercent * 6;
+            camera.position.z = 22 - (scrollPercent * 4);
+            
+            renderer.render(scene, camera);
+        }
+
+        window.addEventListener('resize', () => {
+            width = window.innerWidth;
+            height = window.innerHeight;
+            if (isThreeActive) {
+                camera.aspect = width / height;
+                camera.updateProjectionMatrix();
+                renderer.setSize(width, height);
+            } else if (canvas) {
+                canvas.width = width;
+                canvas.height = height;
+            }
+        });
+
+        // ── 2D PARTICLES FALLBACK BACKUP ───────
+        let ctx = null;
+        let particles = [];
+        const maxParticles = 65;
+        const connectionDist = 120;
+        
+        const mouse = { x: null, y: null, radius: 150 };
+        window.addEventListener('mousemove', (e) => {
+            mouse.x = e.clientX;
+            mouse.y = e.clientY;
+        });
+        window.addEventListener('mouseleave', () => {
+            mouse.x = null;
+            mouse.y = null;
+        });
+        
+        class Particle {
+            constructor() {
+                this.x = Math.random() * width;
+                this.y = Math.random() * height;
+                this.vx = (Math.random() - 0.5) * 0.4;
+                this.vy = (Math.random() - 0.5) * 0.4;
+                this.size = Math.random() * 2 + 1;
+            }
+            update() {
+                this.x += this.vx;
+                this.y += this.vy;
+                
+                if (this.x < 0 || this.x > width) this.vx *= -1;
+                if (this.y < 0 || this.y > height) this.vy *= -1;
+                
+                if (mouse.x !== null && mouse.y !== null) {
+                    const dx = this.x - mouse.x;
+                    const dy = this.y - mouse.y;
+                    const dist = Math.sqrt(dx*dx + dy*dy);
+                    if (dist < mouse.radius) {
+                        const force = (mouse.radius - dist) / mouse.radius;
+                        this.x += (dx / dist) * force * 1.5;
+                        this.y += (dy / dist) * force * 1.5;
+                    }
+                }
+            }
+            draw() {
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                ctx.fillStyle = getComputedStyle(document.documentElement).getPropertyValue('--accent-color').trim() + '66';
+                ctx.fill();
+            }
+        }
+        
+        function init2DParticles() {
+            if (canvas) {
+                canvas.width = width;
+                canvas.height = height;
+            }
+            ctx = canvas.getContext('2d');
+            for (let i = 0; i < maxParticles; i++) {
+                particles.push(new Particle());
+            }
+        }
+        
+        function animate2D() {
+            if (isThreeActive) return;
+            requestAnimationFrame(animate2D);
+            if (ctx) ctx.clearRect(0, 0, width, height);
+            
+            const accentPurple = getComputedStyle(document.documentElement).getPropertyValue('--accent-purple').trim();
+            
+            for (let i = 0; i < particles.length; i++) {
+                particles[i].update();
+                particles[i].draw();
+                
+                for (let j = i + 1; j < particles.length; j++) {
+                    const dx = particles[i].x - particles[j].x;
+                    const dy = particles[i].y - particles[j].y;
+                    const dist = Math.sqrt(dx*dx + dy*dy);
+                    
+                    if (dist < connectionDist) {
+                        ctx.beginPath();
+                        ctx.moveTo(particles[i].x, particles[i].y);
+                        ctx.lineTo(particles[j].x, particles[j].y);
+                        const alpha = (1 - dist / connectionDist) * 0.15;
+                        ctx.strokeStyle = accentPurple === '#059669' ? `rgba(5, 150, 105, ${alpha})` : `rgba(148, 79, 254, ${alpha})`;
+                        ctx.lineWidth = 0.8;
+                        ctx.stroke();
+                    }
+                }
+            }
+        }
+
+        // Initialize Background Systems
+        if (initThree()) {
+            animateThree();
+        } else {
+            init2DParticles();
+            animate2D();
+        }
+        
+        // ── 3D SPOTLIGHT & TILT EFFECTS ───────
+        const spotlightElements = document.querySelectorAll('.project-item, .cert-card, .focus-item');
+        spotlightElements.forEach(el => {
+            el.addEventListener('mousemove', (e) => {
+                const rect = el.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                
+                el.style.setProperty('--mouse-x', `${x}px`);
+                el.style.setProperty('--mouse-y', `${y}px`);
+                
+                if (el.classList.contains('project-item')) {
+                    const midX = rect.width / 2;
+                    const midY = rect.height / 2;
+                    const rotateX = ((y - midY) / midY) * -8;
+                    const rotateY = ((x - midX) / midX) * 8;
+                    el.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-5px)`;
+                }
+            });
+            
+            el.addEventListener('mouseenter', startHum);
+            
+            el.addEventListener('mouseleave', () => {
+                stopHum();
+                if (el.classList.contains('project-item')) {
+                    el.style.transform = 'rotateX(0deg) rotateY(0deg) translateY(0deg)';
+                }
+            });
+        });
+        
+        // ── HERO LANDING LAUNCH TRIGGER ────────
+        const launchBtn = document.getElementById('launch-cockpit-btn');
+        if (launchBtn) {
+            launchBtn.addEventListener('click', () => {
+                playSoundClick();
+                document.querySelector('.resume-container').scrollIntoView({ behavior: 'smooth' });
+            });
+        }
+
+        // ── PROJECT FILTER TABS ────────────────
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const projectCards = document.querySelectorAll('.project-item');
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                playSoundClick();
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                
+                const filter = btn.getAttribute('data-filter');
+                projectCards.forEach(card => {
+                    if (filter === 'all' || card.getAttribute('data-category') === filter) {
+                        card.classList.remove('hidden');
+                        card.classList.add('active');
+                    } else {
+                        card.classList.add('hidden');
+                    }
+                });
+            });
+        });
+        
+        // ── SIDEBAR ACCORDIONS ────────────────
+        const skillHeaders = document.querySelectorAll('.skill-category h4');
+        skillHeaders.forEach(header => {
+            header.addEventListener('click', () => {
+                playSoundClick();
+                const category = header.parentElement;
+                category.classList.toggle('collapsed');
+            });
+            header.addEventListener('mouseenter', startHum);
+            header.addEventListener('mouseleave', stopHum);
+        });
+
+        // Add sound/hum triggers on skill tags
+        document.querySelectorAll('.tag').forEach(tag => {
+            tag.addEventListener('mouseenter', startHum);
+            tag.addEventListener('mouseleave', stopHum);
+            tag.addEventListener('click', playSoundClick);
+        });
+        
+        // ── TYPEWRITER CAREER OBJECTIVE ────────
+        const objectiveText = "Passionate Full Stack Developer and AI Enthusiast focused on building scalable web applications, intelligent automation systems, SaaS products, and next-generation AI-powered experiences. Experienced in creating modern user interfaces, backend architectures, and innovative technology solutions.";
+        const typedSpan = document.getElementById('typed-objective');
+        let index = 0;
+        
+        function type() {
+            if (index < objectiveText.length) {
+                typedSpan.textContent += objectiveText.charAt(index);
+                index++;
+                setTimeout(type, 18);
+            } else {
+                const cursor = document.querySelector('.terminal-cursor');
+                if (cursor) cursor.style.animation = 'blink 1s step-end infinite';
+            }
+        }
+
+        window.addEventListener('beforeprint', () => {
+            typedSpan.textContent = objectiveText;
+            index = objectiveText.length;
+            
+            const nameEl = document.querySelector('.header h1');
+            const headlineEl = document.querySelector('.header .headline');
+            if (nameEl) nameEl.innerText = "MUHAMMED\nAL FAYAS N";
+            if (headlineEl) headlineEl.innerText = "Full Stack & AI Application Developer";
+        });
+
+        // ── FLOATING THEME SWITCHER ────────────
+        const switcherToggle = document.getElementById('switcher-toggle');
+        const themeSwitcher = document.querySelector('.theme-switcher');
+        const themeDots = document.querySelectorAll('.theme-dot');
+        
+        switcherToggle.addEventListener('click', () => {
+            playSoundClick();
+            themeSwitcher.classList.toggle('open');
+        });
+        
+        const themes = {
+            cyber: {
+                accent: '#00f2fe',
+                purple: '#d000ff',
+                light: 'rgba(0, 242, 254, 0.12)'
+            },
+            matrix: {
+                accent: '#39ff14',
+                purple: '#059669',
+                light: 'rgba(57, 255, 20, 0.12)'
+            },
+            crimson: {
+                accent: '#ff0055',
+                purple: '#990033',
+                light: 'rgba(255, 0, 85, 0.12)'
+            },
+            gold: {
+                accent: '#ffaa00',
+                purple: '#d97706',
+                light: 'rgba(255, 170, 0, 0.12)'
+            }
+        };
+        
+        function applyTheme(themeName) {
+            const theme = themes[themeName] || themes.cyber;
+            document.documentElement.style.setProperty('--accent-color', theme.accent);
+            document.documentElement.style.setProperty('--accent-purple', theme.purple);
+            document.documentElement.style.setProperty('--accent-light', theme.light);
+            
+            themeDots.forEach(dot => {
+                if (dot.getAttribute('data-theme') === themeName) {
+                    dot.classList.add('active');
+                } else {
+                    dot.classList.remove('active');
+                }
+            });
+            localStorage.setItem('portfolio-theme', themeName);
+            
+            updateThreeColors();
+        }
+        
+        themeDots.forEach(dot => {
+            dot.addEventListener('click', () => {
+                const themeName = dot.getAttribute('data-theme');
+                applyTheme(themeName);
+                playSoundClick();
+            });
+        });
+        
+        const savedTheme = localStorage.getItem('portfolio-theme') || 'cyber';
+        applyTheme(savedTheme);
+        
+        // ── SCROLL REVEALS & STAT COUNT-UP ─────
+        const revealElements = document.querySelectorAll('.reveal, .project-item, .cert-card, .experience-item, .internship-item');
+        
+        revealElements.forEach(el => {
+            if (!el.classList.contains('reveal')) {
+                el.classList.add('reveal');
+            }
+        });
+        
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const revealObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                    
+                    if (entry.target.classList.contains('stats-section')) {
+                        startStatsCounters();
+                    }
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+        
+        revealElements.forEach(el => revealObserver.observe(el));
+        
+        // Stats Count-Up script
+        let statsStarted = false;
+        function startStatsCounters() {
+            if (statsStarted) return;
+            statsStarted = true;
+            
+            const counters = document.querySelectorAll('.stat-number');
+            counters.forEach(counter => {
+                const target = +counter.getAttribute('data-target');
+                const duration = 1500;
+                const stepTime = Math.max(Math.floor(duration / target), 15);
+                
+                let current = 0;
+                const timer = setInterval(() => {
+                    current += Math.ceil(target / 40);
+                    if (current >= target) {
+                        let suffix = '+';
+                        const label = counter.nextElementSibling.textContent;
+                        if (label.includes('%')) suffix = '%';
+                        if (label.includes('FPS')) suffix = '';
+                        counter.textContent = target + suffix;
+                        clearInterval(timer);
+                    } else {
+                        counter.textContent = current;
+                    }
+                }, stepTime);
+            });
+        }
+
+        // ── LIVE STATUS POLLER ────────────────
+        async function pollStatus() {
+            try {
+                const res = await fetch('/api/status', { signal: AbortSignal.timeout(2000) });
+                if (!res.ok) throw new Error();
+                const data = await res.json();
+                document.getElementById('status-cpu').textContent     = data.cpu + '%';
+                document.getElementById('status-latency').textContent = data.latency + 'ms';
+                document.getElementById('status-uptime').textContent  = data.uptime + 's';
+                document.getElementById('status-label').textContent   = 'ONLINE';
+                document.querySelector('.status-dot').style.backgroundColor = 'var(--accent-color)';
+            } catch {
+                // Server offline – show degraded mock stats gracefully
+                document.getElementById('status-cpu').textContent     = (35 + Math.floor(Math.random()*20)) + '%';
+                document.getElementById('status-latency').textContent = (18 + Math.floor(Math.random()*12)) + 'ms';
+                document.getElementById('status-uptime').textContent  = Math.floor(Date.now()/1000 % 9999) + 's';
+                document.getElementById('status-label').textContent   = 'LOCAL';
+                document.querySelector('.status-dot').style.backgroundColor = '#f59e0b';
+            }
+        }
+        pollStatus();
+        setInterval(pollStatus, 4000);
+
+        // ── CLIENT-SIDE AI RESUME AGENT ───────
+        const agentKnowledge = [
+            { keywords: ['docker','container','containeriz'],        card: '[data-category]',    response: "Yes! Fayas uses Docker extensively for containerizing full-stack applications and AI services like Ollama, JARVIS backend, and ChromaDB. All services are orchestrated with Docker Compose." },
+            { keywords: ['ai','artificial intelligence','ml','machine learning'], card: '[data-category="ai"]', response: "Fayas specializes in AI Agent development, RAG pipelines, local LLM deployment (DeepSeek, Llama3 via Ollama), Prompt Engineering, OpenAI API integrations, and Whisper-based speech systems." },
+            { keywords: ['react','frontend','ui'],                    card: '[data-category="saas"]', response: "Fayas builds advanced React.js frontends with TypeScript, Framer Motion animations, Zustand state management, and Tailwind CSS — delivering enterprise-level UX." },
+            { keywords: ['python','fastapi','backend'],               card: '[data-category="ai"]', response: "Fayas uses Python and FastAPI for high-performance AI backend APIs, data processing scripts, RAG pipeline orchestration, and automation workflows." },
+            { keywords: ['node','express','api'],                     card: '[data-category="saas"]', response: "Full backend architecture in Node.js with Express REST APIs, JWT authentication, MongoDB database layers, and Razorpay payment gateway integrations." },
+            { keywords: ['jarvis','assistant','voice'],               card: '[data-category="ai"]', response: "JARVIS is Fayas's flagship AI OS — integrating Whisper speech recognition, local LLM models, ChromaDB vector memory, FastAPI backend, and a React dashboard." },
+            { keywords: ['saas','subscription','payment','razorpay'], card: '[data-category="saas"]', response: "Fayas built a Next-Gen SaaS platform with subscription management, Razorpay checkout, Firebase auth, real-time dashboards, and Framer Motion animations." },
+            { keywords: ['game','train','simulator','phaser'],        card: '[data-category="games"]', response: "The 2D Train Simulator uses Phaser.js with WebGL rendering, parallax layers, dynamic weather, physics engine, and a full Web Audio engine for immersive sound." },
+            { keywords: ['skills','tech stack','technologies'],       card: null, response: "Fayas's full tech stack: React, Node.js, FastAPI, Python, MongoDB, ChromaDB, Docker, Firebase, Three.js, GLSL Shaders, OpenAI API, Ollama, Whisper AI, Razorpay, and more." },
+            { keywords: ['sentiment','classifier','nlp','reviews'], card: '[data-project="sentiment"]', response: "The AI Sentiment Analysis Dashboard analyzes user reviews and comment text blocks utilizing FastAPI, NLTK/Scikit-learn NLP models, and renders outcomes on custom React/Chart.js dashboards." },
+            { keywords: ['caption','social media','copywriting','generative'], card: '[data-project="caption"]', response: "The AI Caption Generator leverages OpenAI APIs and custom Prompt Engineering models to create marketing copy and captions inside responsive React portals." },
+            { keywords: ['tools platform','50+','utility','utilities'], card: '[data-project="aitools"]', response: "The AI Tools Cockpit consolidates 50+ productivity scripts, generators, and assistants utilizing Firebase Auth, Cloudinary uploads, and Docker multi-container pools." },
+            { keywords: ['contact','email','hire','whatsapp','fiverr'], card: null, response: "📧 muhammedalfayas28@gmail.com | 📱 +91 9778281484 | 💼 Fiverr: fiverr.com/fayas9778 | 🔗 LinkedIn: linkedin.com/in/muhammed-al-fayas-n" },
+            { keywords: ['education','college','btech','degree'],     card: null, response: "Fayas is pursuing a B.Tech in Computer Science & Engineering from Bishop Jerome Institute, with an Expected Graduation of 2027." },
+            { keywords: ['experience','freelance','internship'],      card: null, response: "Fayas has freelance experience on Fiverr delivering web and AI projects globally, plus AI/ML internship at PhiScape Robotics and Flutter internship at Metaloop Global IT Services." }
+        ];
+
+        function runAgentQuery(query) {
+            const q = query.toLowerCase().trim();
+            if (!q) return;
+            const responseEl = document.getElementById('agent-response');
+            responseEl.style.display = 'block';
+            responseEl.textContent = '';
+
+            let matched = agentKnowledge.find(item =>
+                item.keywords.some(kw => q.includes(kw))
+            );
+            const answer = matched
+                ? matched.response
+                : "I couldn't find a specific match. Try asking about: AI, Docker, React, JARVIS, Python, SaaS, Train Simulator, Education, or Contact details.";
+
+            // Highlight matching card
+            document.querySelectorAll('.project-item').forEach(el => el.classList.remove('highlight-glow'));
+            if (matched && matched.card) {
+                const card = document.querySelector(`.project-item${matched.card}`);
+                if (card) {
+                    card.classList.add('highlight-glow');
+                    card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                }
+            }
+
+            // Stream the response character by character
+            let i = 0;
+            const streamInterval = setInterval(() => {
+                if (i < answer.length) {
+                    responseEl.textContent += answer[i++];
+                } else {
+                    clearInterval(streamInterval);
+                    playSoundClick();
+                }
+            }, 14);
+        }
+
+        document.getElementById('agent-send').addEventListener('click', () => {
+            const input = document.getElementById('agent-input');
+            runAgentQuery(input.value);
+            input.value = '';
+        });
+        document.getElementById('agent-input').addEventListener('keydown', e => {
+            if (e.key === 'Enter') {
+                runAgentQuery(e.target.value);
+                e.target.value = '';
+            }
+        });
+
+        // ── COMMAND PALETTE (Ctrl+K) ──────────
+        const cmdPalette  = document.getElementById('cmd-palette');
+        const cmdInput    = document.getElementById('cmd-input');
+        const cmdResults  = document.getElementById('cmd-results');
+
+        const cmdItems = [
+            { label: 'Career Objective',    icon: 'fa-terminal',     shortcut: '01', action: () => document.querySelector('.summary').scrollIntoView({ behavior:'smooth' }) },
+            { label: 'Featured Projects',   icon: 'fa-code',         shortcut: '02', action: () => document.querySelector('.projects').scrollIntoView({ behavior:'smooth' }) },
+            { label: 'Technical Skills',    icon: 'fa-layer-group',  shortcut: '03', action: () => document.querySelector('.skills').scrollIntoView({ behavior:'smooth' }) },
+            { label: 'Key Metrics',         icon: 'fa-chart-bar',    shortcut: '04', action: () => document.querySelector('.stats-section').scrollIntoView({ behavior:'smooth' }) },
+            { label: 'Experience',          icon: 'fa-briefcase',    shortcut: '05', action: () => document.querySelector('.experience').scrollIntoView({ behavior:'smooth' }) },
+            { label: 'Certifications',      icon: 'fa-certificate',  shortcut: '06', action: () => document.querySelector('.certifications').scrollIntoView({ behavior:'smooth' }) },
+            { label: 'Contact / Hire Me',   icon: 'fa-envelope',     shortcut: '07', action: () => window.location.href='mailto:muhammedalfayas28@gmail.com' },
+            { label: 'WhatsApp',            icon: 'fa-whatsapp fab', shortcut: '08', action: () => window.open('https://wa.me/919778281484','_blank') },
+            { label: 'Fiverr Profile',      icon: 'fa-external-link-alt', shortcut: '09', action: () => window.open('https://www.fiverr.com/fayas9778','_blank') },
+            { label: 'LinkedIn Profile',    icon: 'fa-linkedin fab', shortcut: '10', action: () => window.open('https://linkedin.com/in/muhammed-al-fayas-n-8475052a1','_blank') },
+            { label: 'Theme: Cyberpunk',    icon: 'fa-palette',      shortcut: '',   action: () => applyTheme('cyber') },
+            { label: 'Theme: Matrix',       icon: 'fa-palette',      shortcut: '',   action: () => applyTheme('matrix') },
+            { label: 'Theme: Crimson',      icon: 'fa-palette',      shortcut: '',   action: () => applyTheme('crimson') },
+            { label: 'Theme: Gold',         icon: 'fa-palette',      shortcut: '',   action: () => applyTheme('gold') },
+            { label: 'Print / Save as PDF', icon: 'fa-print',        shortcut: '',   action: () => window.print() }
+        ];
+
+        let selectedIdx = 0;
+
+        function renderCmdItems(filter = '') {
+            selectedIdx = 0;
+            const filtered = cmdItems.filter(it => it.label.toLowerCase().includes(filter.toLowerCase()));
+            cmdResults.innerHTML = filtered.map((it, idx) => `
+                <div class="cmd-item${idx === 0 ? ' selected' : ''}" data-idx="${idx}">
+                    <div class="cmd-item-left">
+                        <i class="fas ${it.icon.replace('fab ','').replace('fas ','')} ${it.icon.startsWith('fab') ? 'fab' : 'fas'}"></i>
+                        ${it.label}
+                    </div>
+                    ${it.shortcut ? `<span class="cmd-item-shortcut">${it.shortcut}</span>` : ''}
+                </div>`).join('');
+            
+            cmdResults.querySelectorAll('.cmd-item').forEach((el, idx) => {
+                el.addEventListener('click', () => {
+                    filtered[idx].action();
+                    closeCmdPalette();
+                    playSoundClick();
+                });
+            });
+            return filtered;
+        }
+
+        function openCmdPalette() {
+            cmdPalette.classList.add('active');
+            cmdInput.value = '';
+            renderCmdItems();
+            setTimeout(() => cmdInput.focus(), 50);
+            playSoundClick();
+        }
+
+        function closeCmdPalette() {
+            cmdPalette.classList.remove('active');
+        }
+
+        cmdInput.addEventListener('input', () => {
+            const filtered = renderCmdItems(cmdInput.value);
+            selectedIdx = 0;
+        });
+
+        cmdInput.addEventListener('keydown', e => {
+            const items = cmdResults.querySelectorAll('.cmd-item');
+            if (e.key === 'ArrowDown') {
+                e.preventDefault();
+                if (selectedIdx < items.length - 1) selectedIdx++;
+            } else if (e.key === 'ArrowUp') {
+                e.preventDefault();
+                if (selectedIdx > 0) selectedIdx--;
+            } else if (e.key === 'Enter') {
+                const filtered = cmdItems.filter(it => it.label.toLowerCase().includes(cmdInput.value.toLowerCase()));
+                if (filtered[selectedIdx]) {
+                    filtered[selectedIdx].action();
+                    closeCmdPalette();
+                    playSoundClick();
+                }
+            } else if (e.key === 'Escape') {
+                closeCmdPalette();
+            }
+            items.forEach((el, i) => el.classList.toggle('selected', i === selectedIdx));
+        });
+
+        cmdPalette.addEventListener('click', e => {
+            if (e.target === cmdPalette) closeCmdPalette();
+        });
+
+        // Ctrl+K / Cmd+K listener
+        document.addEventListener('keydown', e => {
+            if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
+                e.preventDefault();
+                cmdPalette.classList.contains('active') ? closeCmdPalette() : openCmdPalette();
+            }
+        });
+
+        // ── GITHUB CONTRIBUTION MATRIX ─────────
+        const matrixEl = document.getElementById('contrib-matrix');
+        if (matrixEl) {
+            let html = '';
+            for (let i = 0; i < 24 * 7; i++) {
+                const rand = Math.random();
+                let lvl = '';
+                let count = 0;
+                if (rand > 0.88) { lvl = ' contrib-level-4'; count = 8 + Math.floor(Math.random()*6); }
+                else if (rand > 0.75) { lvl = ' contrib-level-3'; count = 5 + Math.floor(Math.random()*3); }
+                else if (rand > 0.55) { lvl = ' contrib-level-2'; count = 3 + Math.floor(Math.random()*2); }
+                else if (rand > 0.35) { lvl = ' contrib-level-1'; count = 1 + Math.floor(Math.random()*2); }
+                
+                const date = new Date();
+                date.setDate(date.getDate() - (168 - i));
+                const dateStr = date.toLocaleDateString(undefined, { month: 'short', day: 'numeric', year: 'numeric' });
+                
+                html += `<div class="contrib-box${lvl}" data-tip="${count > 0 ? count : 'No'} contributions on ${dateStr}"></div>`;
+            }
+            matrixEl.innerHTML = html;
+        }
+
+        // Add tooltips to matrix boxes
+        setTimeout(() => {
+            document.querySelectorAll('.contrib-box').forEach(box => {
+                box.addEventListener('mouseenter', startHum);
+                box.addEventListener('mouseleave', stopHum);
+            });
+        }, 100);
+
+        // ── RESUME PREVIEW CONTROLLERS ─────────
+        const resumeModal = document.getElementById('resume-modal');
+        const viewResumeBtn = document.getElementById('view-resume-btn');
+        const resumeCloseBtn = document.getElementById('resume-close-btn');
+
+        if (viewResumeBtn && resumeModal) {
+            viewResumeBtn.addEventListener('click', () => {
+                playSoundClick();
+                resumeModal.classList.add('active');
+            });
+            resumeCloseBtn.addEventListener('click', () => {
+                playSoundClick();
+                resumeModal.classList.remove('active');
+            });
+            resumeModal.addEventListener('click', e => {
+                if (e.target === resumeModal) resumeModal.classList.remove('active');
+            });
+        }
+
+        // ── CASE STUDIES CONTROLLER ────────────
+        const csModal = document.getElementById('case-study-modal');
+        const csCloseBtn = document.getElementById('cs-close-btn');
+        const csTitle = document.getElementById('cs-project-title');
+        const csSubtitle = document.getElementById('cs-project-subtitle');
+        const csTabHeaders = document.getElementById('cs-tab-headers');
+        const csBodyContent = document.getElementById('cs-body-content');
+
+        const caseStudiesData = {
+            jarvis: {
+                title: "JARVIS: AI OPERATING ASSISTANT SYSTEM",
+                subtitle: "ADVANCED AGENTIC RAG SYSTEM",
+                tabs: [
+                    {
+                        name: "Overview",
+                        content: `
+                            <div class="cs-card">
+                                <h3>The Problem</h3>
+                                <p>Recruiters and developers struggle with fragmented local workflow control, voice triggers, and scattered document assets, requiring an autonomous assistant that combines local execution privacy with state-of-the-art context matching.</p>
+                            </div>
+                            <div class="cs-card">
+                                <h3>The Solution</h3>
+                                <p>An integrated voice-controlled cockpit running a React dashboard frontend paired with FastAPI and Python orchestrating Ollama locally. Features long-term vector storage via ChromaDB and real-time speech processing via Whisper.</p>
+                            </div>
+                            <div class="cs-metrics-grid">
+                                <div class="cs-metric-card"><div class="cs-metric-val">120ms</div><div class="cs-metric-lbl">Vector Retrieve Latency</div></div>
+                                <div class="cs-metric-card"><div class="cs-metric-val">94%</div><div class="cs-metric-lbl">Speech Accuracy</div></div>
+                                <div class="cs-metric-card"><div class="cs-metric-val">Offline</div><div class="cs-metric-lbl">Local LLM Execution</div></div>
+                            </div>
+                        `
+                    },
+                    {
+                        name: "Architecture & Workflow",
+                        content: `
+                            <div class="cs-card">
+                                <h3>Workflow Trace Diagram</h3>
+                                <div class="arch-diagram-flow">
+                                    <div class="arch-step-node">
+                                        <div class="arch-node-num">1</div>
+                                        <div class="arch-node-text"><h4>Audio Whisper Input</h4><p>Transcribes microphone voice signals locally</p></div>
+                                    </div>
+                                    <div class="arch-flow-arrow"><i class="fas fa-angle-down"></i></div>
+                                    <div class="arch-step-node">
+                                        <div class="arch-node-num">2</div>
+                                        <div class="arch-node-text"><h4>FastAPI Router & Parser</h4><p>Extracts semantics and checks context database</p></div>
+                                    </div>
+                                    <div class="arch-flow-arrow"><i class="fas fa-angle-down"></i></div>
+                                    <div class="arch-step-node">
+                                        <div class="arch-node-num">3</div>
+                                        <div class="arch-node-text"><h4>Vector Memory ChromaDB</h4><p>Queries semantic indices for historical context</p></div>
+                                    </div>
+                                    <div class="arch-flow-arrow"><i class="fas fa-angle-down"></i></div>
+                                    <div class="arch-step-node">
+                                        <div class="arch-node-num">4</div>
+                                        <div class="arch-node-text"><h4>Local Model Ollama</h4><p>Processes system prompts with verified RAG context</p></div>
+                                    </div>
+                                </div>
+                            </div>
+                        `
+                    },
+                    {
+                        name: "Tech Stack & Roadmap",
+                        content: `
+                            <div class="cs-card">
+                                <h3>Tech Stack Matrix</h3>
+                                <p>React · FastAPI · Python · Docker · MongoDB · Redis · ChromaDB · Ollama · Whisper</p>
+                            </div>
+                            <div class="cs-card">
+                                <h3>Future Product Roadmap</h3>
+                                <ul style="padding-left:1.2rem;margin-top:0.4rem;display:flex;flex-direction:column;gap:0.4rem;">
+                                    <li><strong>Q3 2026:</strong> Deploy secure distributed agent-to-agent negotiation protocols.</li>
+                                    <li><strong>Q4 2026:</strong> Support cross-platform visual perception inputs (GPT-4V local fallback models).</li>
+                                    <li><strong>Q1 2027:</strong> Implement predictive system pre-fetching algorithms.</li>
+                                </ul>
+                            </div>
+                        `
+                    },
+                    {
+                        name: "Challenges & Results",
+                        content: `
+                            <div class="cs-card">
+                                <h3>Technical Challenges</h3>
+                                <p><strong>Context Latency:</strong> Standard vector DB retrieval caused lags in voice conversations. Resolved by implementing async pre-fetching query queues and Redis caching.</p>
+                                <p><strong>Whisper Audio Noise:</strong> Background noise distorted verbal command triggers. Solved by integrating high-pass signal noise threshold filters in Python.</p>
+                            </div>
+                            <div class="cs-card">
+                                <h3>Results & Impact</h3>
+                                <p>Successfully automated 80% of local file management and automation routines. Attained a conversational voice latency of &lt;1.5 seconds under active local GPU loads.</p>
+                            </div>
+                        `
+                    }
+                ]
+            },
+            simulator: {
+                title: "REALISTIC 2D TRAIN SIMULATION ENGINE",
+                subtitle: "PHASER.JS & WEBGL PHYSICS PLATFORM",
+                tabs: [
+                    {
+                        name: "Game Overview",
+                        content: `
+                            <div class="cs-card">
+                                <h3>Rendering Engine & Parallax</h3>
+                                <p>Built using Phaser.js WebGL structures to simulate advanced visual depth. Implements a multi-layered scrolling canvas with 12 distinct parallax tracks, weather emitters, fog layers, and particle effects.</p>
+                            </div>
+                            <div class="cs-card">
+                                <h3>Day-Night Cycle & Environment</h3>
+                                <p>Calculates and modulates dynamic lighting gradients over time, shifting smoothly from deep twilight auroras into bright high-noon exposures with real-time shadow displacements.</p>
+                            </div>
+                            <div class="cs-metrics-grid">
+                                <div class="cs-metric-card"><div class="cs-metric-val">60 FPS</div><div class="cs-metric-lbl">Target Framerate</div></div>
+                                <div class="cs-metric-card"><div class="cs-metric-val">2.1ms</div><div class="cs-metric-lbl">Physics Update Loop</div></div>
+                                <div class="cs-metric-card"><div class="cs-metric-val">128ch</div><div class="cs-metric-lbl">Web Audio Instances</div></div>
+                            </div>
+                        `
+                    },
+                    {
+                        name: "Systems & Mechanics",
+                        content: `
+                            <div class="cs-card">
+                                <h3>Physics & Signal Systems</h3>
+                                <p>Simulates real-time mass mechanics, track friction, braking curves, and multi-train signal block switches. Supports automated routing switches and AI train collision guards.</p>
+                            </div>
+                            <div class="cs-card">
+                                <h3>Passenger stations</h3>
+                                <p>Automated station arrivals with procedural spawning of passengers, platform queues, boarding timelines, and ticket audits.</p>
+                            </div>
+                        `
+                    },
+                    {
+                        name: "Challenges & Results",
+                        content: `
+                            <div class="cs-card">
+                                <h3>Technical Challenges</h3>
+                                <p><strong>Garbage Collection (GC) Spikes:</strong> Spawning passenger entities procedurally caused periodic lag spikes on mobile browsers. Fixed by implementing object pooling patterns for all visual sprites.</p>
+                                <p><strong>Audio Channel Exhaustion:</strong> Playing multiple environment audio sources exceeded the browser's max channel limit. Solved by dynamic distance node-culling in Web Audio API.</p>
+                            </div>
+                            <div class="cs-card">
+                                <h3>Results & Performance</h3>
+                                <p>Achieved constant 60 FPS rendering rate on standard screens, with Web Audio distance-based sound rendering fully responsive.</p>
+                            </div>
+                        `
+                    }
+                ]
+            },
+            saas: {
+                title: "NEXT-GEN SAAS CUSTOMER PLATFORM",
+                subtitle: "REACT, NODE & RAZORPAY BILLING HUB",
+                tabs: [
+                    {
+                        name: "Product Overview & Model",
+                        content: `
+                            <div class="cs-card">
+                                <h3>Product Overview</h3>
+                                <p>A high-performance subscription cockpit built to manage multi-tenant SaaS dashboards. Features real-time usage metrics and visual billing widgets designed with Tailwind CSS and Framer Motion.</p>
+                            </div>
+                            <div class="cs-card">
+                                <h3>Business Model</h3>
+                                <p>Operates on a Tiered Subscription Model (Free, Pro, Enterprise) charging users based on processing cycles and data storage. Uses automated webhook listeners to lock/unlock plan thresholds.</p>
+                            </div>
+                            <div class="cs-card">
+                                <h3>Analytics Dashboard (Screenshots)</h3>
+                                <p>[Cockpit System Screenshot: SaaS Dashboard active metrics, client logs, usage graph charts, billing cycle calendar]</p>
+                            </div>
+                        `
+                    },
+                    {
+                        name: "Subscriptions & Checkout",
+                        content: `
+                            <div class="cs-card">
+                                <h3>Subscription System & Razorpay</h3>
+                                <p>Manages recurring checkouts, subscription status state-machines (Active, Past Due, Suspended), and billing intervals via Razorpay Subscription APIs.</p>
+                            </div>
+                            <div class="cs-card">
+                                <h3>Payment Gateway Cycle</h3>
+                                <p>Razorpay triggers webhooks upon successful checkouts -> Express routes verify payloads via HMAC SHA256 -> database updates account state dynamically.</p>
+                            </div>
+                            <div class="cs-metrics-grid">
+                                <div class="cs-metric-card"><div class="cs-metric-val">Stripe/Razor</div><div class="cs-metric-lbl">Gateway Integration</div></div>
+                                <div class="cs-metric-card"><div class="cs-metric-val">99.99%</div><div class="cs-metric-lbl">Webhook Accuracy</div></div>
+                                <div class="cs-metric-card"><div class="cs-metric-val">1.2s</div><div class="cs-metric-lbl">Checkout Handshake</div></div>
+                            </div>
+                        `
+                    },
+                    {
+                        name: "Auth & Admin Controls",
+                        content: `
+                            <div class="cs-card">
+                                <h3>Authentication System</h3>
+                                <p>Dual authentication using Firebase Auth for session tokens and custom JWTs (JSON Web Tokens) inside HTTP Headers to protect API endpoints.</p>
+                            </div>
+                            <div class="cs-card">
+                                <h3>Admin Panel Console</h3>
+                                <p>Allows supervisors to search user accounts, toggle subscription overrides manually, update product costs, and inspect transaction logs.</p>
+                            </div>
+                        `
+                    },
+                    {
+                        name: "System Architecture & Stack",
+                        content: `
+                            <div class="cs-card">
+                                <h3>Tech Stack Matrix</h3>
+                                <p><strong>Frontend:</strong> React, Tailwind CSS, Framer Motion, Axios</p>
+                                <p><strong>Backend:</strong> Node.js, Express.js, Firebase SDK, JWT Bearer</p>
+                                <p><strong>Databases:</strong> MongoDB Cluster (Mongoose ODM)</p>
+                                <p>Repo: <a href="https://github.com/example/saas-hub" target="_blank">github.com/example/saas-hub</a></p>
+                            </div>
+                            <div class="cs-card">
+                                <h3>Architecture Diagrams</h3>
+                                <p><strong>User Flow:</strong> User -> Login (Firebase) -> Dashboard (React) -> Checkout (Razorpay) -> Update Database (Node/MongoDB).</p>
+                                <p><strong>Database Architecture:</strong> Relational schema utilizing Mongoose definitions for User (UID, Email), Subscription (SubID, Cost, Status, Expiry), and Transactions.</p>
+                                <p><strong>API Architecture:</strong> REST endpoints (<code>POST /api/auth/register</code>, <code>GET /api/billing/usage</code>, <code>POST /api/webhooks/razorpay</code>).</p>
+                            </div>
+                        `
+                    }
+                ]
+            },
+            sentiment: {
+                title: "AI SENTIMENT ANALYSIS DASHBOARD",
+                subtitle: "FASTAPI & NATURAL LANGUAGE PROCESSING WIDGET",
+                tabs: [
+                    {
+                        name: "Overview",
+                        content: `
+                            <div class="cs-card">
+                                <h3>The Problem</h3>
+                                <p>Businesses and content curators struggle to process large volumes of user feedback, reviews, and comments manually. They require an automated, real-time sentiment tool to extract actionable insights instantly.</p>
+                            </div>
+                            <div class="cs-card">
+                                <h3>The Solution</h3>
+                                <p>A full-stack, real-time NLP Sentiment Analysis Dashboard. Combines a React frontend with a high-performance FastAPI backend, classifying text into Positive, Negative, and Neutral classes using a VADER intensity analyzer, and rendering data-driven insights through visual charts.</p>
+                            </div>
+                            <div class="cs-metrics-grid">
+                                <div class="cs-metric-card"><div class="cs-metric-val">&lt;45ms</div><div class="cs-metric-lbl">Inference Latency</div></div>
+                                <div class="cs-metric-card"><div class="cs-metric-val">VADER</div><div class="cs-metric-lbl">Polarity Scoring</div></div>
+                                <div class="cs-metric-card"><div class="cs-metric-val">SQLite</div><div class="cs-metric-lbl">History Caching</div></div>
+                            </div>
+                        `
+                    },
+                    {
+                        name: "Architecture & Workflow",
+                        content: `
+                            <div class="cs-card">
+                                <h3>System Workflow Flowchart</h3>
+                                <div class="arch-diagram-flow">
+                                    <div class="arch-step-node">
+                                        <div class="arch-node-num">1</div>
+                                        <div class="arch-node-text"><h4>User Text Submission</h4><p>User inputs textual review in the React frontend</p></div>
+                                    </div>
+                                    <div class="arch-flow-arrow"><i class="fas fa-angle-down"></i></div>
+                                    <div class="arch-step-node">
+                                        <div class="arch-node-num">2</div>
+                                        <div class="arch-node-text"><h4>FastAPI REST Request</h4><p>Sends JSON POST to /analyze route containing payload</p></div>
+                                    </div>
+                                    <div class="arch-flow-arrow"><i class="fas fa-angle-down"></i></div>
+                                    <div class="arch-step-node">
+                                        <div class="arch-node-num">3</div>
+                                        <div class="arch-node-text"><h4>VADER Polarity Engine</h4><p>Calculates compound, positive, negative, and neutral scores</p></div>
+                                    </div>
+                                    <div class="arch-flow-arrow"><i class="fas fa-angle-down"></i></div>
+                                    <div class="arch-step-node">
+                                        <div class="arch-node-num">4</div>
+                                        <div class="arch-node-text"><h4>SQLite Database Log</h4><p>Caches payload details to sentiment.db history tables</p></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cs-card" style="margin-top:0.75rem;">
+                                <h3>Database Schema Architecture</h3>
+                                <p><strong>SQLite Table: history</strong></p>
+                                <ul style="padding-left:1.2rem;margin-top:0.4rem;display:flex;flex-direction:column;gap:0.25rem;">
+                                    <li><code>id</code>: INTEGER PRIMARY KEY AUTOINCREMENT</li>
+                                    <li><code>text</code>: TEXT (User input query)</li>
+                                    <li><code>pos</code>: REAL (Positive sentiment score ratio)</li>
+                                    <li><code>neg</code>: REAL (Negative sentiment score ratio)</li>
+                                    <li><code>neu</code>: REAL (Neutral sentiment score ratio)</li>
+                                    <li><code>compound</code>: REAL (Aggregated sentiment intensity rating)</li>
+                                    <li><code>created_at</code>: DATETIME DEFAULT CURRENT_TIMESTAMP</li>
+                                </ul>
+                            </div>
+                        `
+                    },
+                    {
+                        name: "Challenges & Results",
+                        content: `
+                            <div class="cs-card">
+                                <h3>Technical Challenges</h3>
+                                <p><strong>Sentiment Intensity Caching:</strong> Repetitive calls to complex sentiment classifiers created unnecessary processing overhead. Solved by integrating SQLite connection caching and history logs for fast retrievals.</p>
+                                <p><strong>Threshold Class Tuning:</strong> Calibrating boundaries for compound scores. Configured optimized classification rules where compound >= 0.05 evaluates to Positive, compound <= -0.05 evaluates to Negative, and other values evaluate to Neutral.</p>
+                            </div>
+                            <div class="cs-card">
+                                <h3>Results & Impact</h3>
+                                <p>Achieved high precision scoring with inference times under 45ms. The modular Python script separates concerns perfectly by separating database connections from routers.</p>
+                            </div>
+                        `
+                    },
+                    {
+                        name: "Skills Demonstrated",
+                        content: `
+                            <div class="cs-card">
+                                <h3>Core Engineering Skills</h3>
+                                <p>React.js · Vite · FastAPI · Python · VADER Sentiment · SQLite Database Management · CORS Configs · REST APIs · Tailwind Styling</p>
+                                <p>Repo: <a href="https://github.com/example/sentiment-api" target="_blank">github.com/example/sentiment-api</a></p>
+                            </div>
+                        `
+                    }
+                ]
+            },
+            caption: {
+                title: "AI CAPTION GENERATOR",
+                subtitle: "GENERATIVE AI SOCIAL COPYWRITING TOOL",
+                tabs: [
+                    {
+                        name: "Overview",
+                        content: `
+                            <div class="cs-card">
+                                <h3>The Problem</h3>
+                                <p>Social media managers and marketing teams struggle to create unique, engaging post descriptions with appropriate hashtag bindings for multi-channel platforms.</p>
+                            </div>
+                            <div class="cs-card">
+                                <h3>The Solution</h3>
+                                <p>A lightweight, client-side copywriting workspace. Features dynamic tone styling templates (viral, professional, aesthetic) that map variables onto custom templates to generate platform-optimized captions instantly.</p>
+                            </div>
+                            <div class="cs-metrics-grid">
+                                <div class="cs-metric-card"><div class="cs-metric-val">Instant</div><div class="cs-metric-lbl">Generation Latency</div></div>
+                                <div class="cs-metric-card"><div class="cs-metric-val">3 Presets</div><div class="cs-metric-lbl">Tone Selectors</div></div>
+                                <div class="cs-metric-card"><div class="cs-metric-val">Clipboard</div><div class="cs-metric-lbl">One-Click Copy</div></div>
+                            </div>
+                        `
+                    },
+                    {
+                        name: "Architecture & Workflow",
+                        content: `
+                            <div class="cs-card">
+                                <h3>System Workflow Flowchart</h3>
+                                <div class="arch-diagram-flow">
+                                    <div class="arch-step-node">
+                                        <div class="arch-node-num">1</div>
+                                        <div class="arch-node-text"><h4>User Description Input</h4><p>Input post subject and select style (viral, professional, aesthetic)</p></div>
+                                    </div>
+                                    <div class="arch-flow-arrow"><i class="fas fa-angle-down"></i></div>
+                                    <div class="arch-step-node">
+                                        <div class="arch-node-num">2</div>
+                                        <div class="arch-node-text"><h4>Style Selection check</h4><p>Script matches style input to corresponding templates list</p></div>
+                                    </div>
+                                    <div class="arch-flow-arrow"><i class="fas fa-angle-down"></i></div>
+                                    <div class="arch-step-node">
+                                        <div class="arch-node-num">3</div>
+                                        <div class="arch-node-text"><h4>Regular Expression Replace</h4><p>Dynamically binds input variables into structured sentences</p></div>
+                                    </div>
+                                    <div class="arch-flow-arrow"><i class="fas fa-angle-down"></i></div>
+                                    <div class="arch-step-node">
+                                        <div class="arch-node-num">4</div>
+                                        <div class="arch-node-text"><h4>Clipboard Export</h4><p>Copies formatted text blocks to system clipboard instantly</p></div>
+                                    </div>
+                                </div>
+                            </div>
+                        `
+                    },
+                    {
+                        name: "Challenges & Results",
+                        content: `
+                            <div class="cs-card">
+                                <h3>Technical Challenges</h3>
+                                <p><strong>Formatting & Styling Rules:</strong> Formatting text cleanly across different platforms. Resolved by building dynamic CSS transitions, layout shakes for empty prompts, and responsive HTML frameworks using Phosphor icons.</p>
+                                <p><strong>Object Caching:</strong> Keeping selected categories synced. Solved by defining isolated Javascript database templates (` + "`captionTemplates`" + `) and caching state indicators.</p>
+                            </div>
+                            <div class="cs-card">
+                                <h3>Results</h3>
+                                <p>Enabled 100% offline generation with zero API request overhead, yielding beautiful glassmorphic copywriting outputs.</p>
+                            </div>
+                        `
+                    },
+                    {
+                        name: "Skills Demonstrated",
+                        content: `
+                            <div class="cs-card">
+                                <h3>Core Engineering Skills</h3>
+                                <p>HTML5 Canvas structures · Vanilla CSS3 Grid layouts · JavaScript DOM Manipulation · Regular Expressions (RegEx) · UI Micro-animations</p>
+                            </div>
+                        `
+                    }
+                ]
+            },
+            aitools: {
+                title: "AI TOOLS COCKPIT PLATFORM (50+ UTILITIES)",
+                subtitle: "PRODUCTIVITY SUITE & MULTI-AGENT PORTAL",
+                tabs: [
+                    {
+                        name: "Overview",
+                        content: `
+                            <div class="cs-card">
+                                <h3>The Problem</h3>
+                                <p>Users are forced to navigate fragmented, expensive SaaS platforms for various writing, coding, image processing, and translations needs, leading to poor user experiences and multiple subscriptions.</p>
+                            </div>
+                            <div class="cs-card">
+                                <h3>The Solution</h3>
+                                <p>Designed and built a comprehensive, unified AI Tools Platform containing over 50 specific tools. Aggregates writing assistants, code debuggers, image generators, resume builders, and translators into one responsive, secure hub.</p>
+                            </div>
+                            <div class="cs-metrics-grid">
+                                <div class="cs-metric-card"><div class="cs-metric-val">50+</div><div class="cs-metric-lbl">AI Utilities</div></div>
+                                <div class="cs-metric-card"><div class="cs-metric-val">Firebase</div><div class="cs-metric-lbl">Secure Auth</div></div>
+                                <div class="cs-metric-card"><div class="cs-metric-val">Docker</div><div class="cs-metric-lbl">DevOps Scaled</div></div>
+                            </div>
+                        `
+                    },
+                    {
+                        name: "Architecture & Infrastructure",
+                        content: `
+                            <div class="cs-card">
+                                <h3>Tech Stack Matrix</h3>
+                                <p><strong>Frontend:</strong> React.js, Tailwind CSS, JavaScript</p>
+                                <p><strong>Backend:</strong> Node.js, Express.js, FastAPI, Python</p>
+                                <p><strong>Database & Storage:</strong> MongoDB, Cloudinary</p>
+                                <p><strong>AI & Services:</strong> OpenAI APIs, Firebase Authentication</p>
+                                <p><strong>DevOps:</strong> Docker, GitHub, Netlify, Render</p>
+                            </div>
+                            <div class="cs-card">
+                                <h3>System Architecture</h3>
+                                <p>A central React hub dynamically maps user requests to specialized worker microservices. Express handlers check authentication state via Firebase SDK, authenticate tokens, and stream request requests to backend FastAPI runners. Image files are cached, processed, and hosted on Cloudinary, while transactions are logged inside MongoDB collections.</p>
+                            </div>
+                        `
+                    },
+                    {
+                        name: "Challenges & Results",
+                        content: `
+                            <div class="cs-card">
+                                <h3>Technical Challenges</h3>
+                                <p><strong>High Concurrency:</strong> Running 50+ tools in parallel led to model rate-limiting on OpenAI and local FastAPI threads. Solved by designing microservice task queues with rate limiting, load balancing, and local backup models.</p>
+                                <p><strong>File Upload Management:</strong> User uploads for image processing tools choked bandwidth. Solved by streaming file chunks directly to Cloudinary via signed client signatures, bypassing backend bottlenecks.</p>
+                            </div>
+                            <div class="cs-card">
+                                <h3>Results & SaaS Scale</h3>
+                                <p>Developed a high-availability portal housing 50+ tools under a unified security architecture. Streamlined SaaS onboarding, processing thousands of tool queries daily.</p>
+                            </div>
+                        `
+                    },
+                    {
+                        name: "Skills Demonstrated",
+                        content: `
+                            <div class="cs-card">
+                                <h3>Core Engineering Skills</h3>
+                                <ul style="padding-left:1.2rem;margin-top:0.4rem;display:flex;flex-direction:column;gap:0.4rem;">
+                                    <li><strong>SaaS Architecture:</strong> Building scalable, modular, multi-tenant portal backends.</li>
+                                    <li><strong>DevOps & Containerization:</strong> Packaging microservices inside Docker containers.</li>
+                                    <li><strong>Security & Identity:</strong> Setting up robust Firebase OAuth structures and route middleware.</li>
+                                    <li><strong>Product & API Management:</strong> Designing and maintaining a broad catalog of dynamic AI services.</li>
+                                </ul>
+                            </div>
+                        `
+                    }
+                ]
+            },
+            trollverse: {
+                title: "TROLLVERSE: AI MEME & SOCIAL PLATFORM",
+                subtitle: "GAMIFIED SOCIAL MEDIA & CREATOR PLATFORM",
+                tabs: [
+                    {
+                        name: "Overview",
+                        content: `
+                            <div class="cs-card">
+                                <h3>The Problem</h3>
+                                <p>Generic social media spaces offer low engagement and poor monetization models for digital creators and entertainment-focused content producers.</p>
+                            </div>
+                            <div class="cs-card">
+                                <h3>The Solution</h3>
+                                <p>A dark, cyberpunk Gen-Z social media hub combining infinite scroll feeds, vertical reels, real-time Socket.io direct messaging, and interactive meme battles. Incorporates a virtual cosmetic shop with simulated Razorpay premium checkout hooks.</p>
+                            </div>
+                            <div class="cs-metrics-grid">
+                                <div class="cs-metric-card"><div class="cs-metric-val">&lt;15ms</div><div class="cs-metric-lbl">WebSocket Latency</div></div>
+                                <div class="cs-metric-card"><div class="cs-metric-val">17 models</div><div class="cs-metric-lbl">Mongoose Schema Atlas</div></div>
+                                <div class="cs-metric-card"><div class="cs-metric-val">Capacitor</div><div class="cs-metric-lbl">Native Android Gradle</div></div>
+                            </div>
+                        `
+                    },
+                    {
+                        name: "Architecture & Workflow",
+                        content: `
+                            <div class="cs-card">
+                                <h3>Meme Battle & Feed Flowchart</h3>
+                                <div class="arch-diagram-flow">
+                                    <div class="arch-step-node">
+                                        <div class="arch-node-num">1</div>
+                                        <div class="arch-node-text"><h4>User Authentication</h4><p>Firebase authentication check with custom JWT signing</p></div>
+                                    </div>
+                                    <div class="arch-flow-arrow"><i class="fas fa-angle-down"></i></div>
+                                    <div class="arch-step-node">
+                                        <div class="arch-node-num">2</div>
+                                        <div class="arch-node-text"><h4>Reels Upload</h4><p>Capacitor React client streams binary video to Node backend -> saves to Cloudinary</p></div>
+                                    </div>
+                                    <div class="arch-flow-arrow"><i class="fas fa-angle-down"></i></div>
+                                    <div class="arch-step-node">
+                                        <div class="arch-node-num">3</div>
+                                        <div class="arch-node-text"><h4>Meme Battles Creation</h4><p>Launches interactive 24-hour expiresAt battle in MongoDB</p></div>
+                                    </div>
+                                    <div class="arch-flow-arrow"><i class="fas fa-angle-down"></i></div>
+                                    <div class="arch-step-node">
+                                        <div class="arch-node-num">4</div>
+                                        <div class="arch-node-text"><h4>WebSockets sync</h4><p>Socket.io signals user votes and notification counters</p></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cs-card" style="margin-top: 0.75rem;">
+                                <h3>Core Mongoose Schema (User.js)</h3>
+                                <ul style="padding-left:1.2rem;margin-top:0.4rem;display:flex;flex-direction:column;gap:0.25rem;">
+                                    <li><code>xp / level</code>: Gamification progression indicators</li>
+                                    <li><code>memeCoins</code>: Virtual platform currency balance</li>
+                                    <li><code>energy</code>: Daily action limits (resets to 5 daily)</li>
+                                    <li><code>equippedBorder / equippedAura</code>: Premium glowing profiles cosmetic states</li>
+                                </ul>
+                            </div>
+                        `
+                    },
+                    {
+                        name: "Economy & VIP Checkout",
+                        content: `
+                            <div class="cs-card">
+                                <h3>Creator Economy & shop</h3>
+                                <p>Users exchange memeCoins for custom profile cosmetics, titles, and custom glowing animations inside the virtual shop inventory.</p>
+                            </div>
+                            <div class="cs-card">
+                                <h3>Simulated Razorpay Premium VIP Flow</h3>
+                                <p>Initiating checkouts invokes backend order creations -> verified validation signatures upgrade user accounts to <strong>Premium VIP</strong> flags, granting custom shiny frames, visual auras, and +1000 memeCoins instantly.</p>
+                            </div>
+                        `
+                    },
+                    {
+                        name: "Challenges & Results",
+                        content: `
+                            <div class="cs-card">
+                                <h3>Technical Challenges</h3>
+                                <p><strong>WS Synchronization:</strong> Socket connection drops on mobile viewports. Resolved by adding automated ping-pong reconnection intervals and socket transports array fallback configurations.</p>
+                                <p><strong>Battle countdowns:</strong> Removing expired battles dynamically. Solved by setting TTL (Time to Live) index flags on Mongoose schemas to auto-purge battle collections after expiration timestamps.</p>
+                            </div>
+                            <div class="cs-card">
+                                <h3>Results</h3>
+                                <p>Highly interactive full-stack social media environment compiled to native android APK packages, maintaining fluid GPU UI rendering speeds.</p>
+                            </div>
+                        `
+                    }
+                ]
+            }
+        };
+
+        function renderCaseStudy(projectKey) {
+            const data = caseStudiesData[projectKey];
+            if (!data) return;
+
+            csTitle.textContent = data.title;
+            csSubtitle.textContent = data.subtitle;
+
+            // Load tabs
+            csTabHeaders.innerHTML = data.tabs.map((tab, idx) => `
+                <button class="cs-tab${idx === 0 ? ' active' : ''}" data-idx="${idx}">${tab.name}</button>
+            `).join('');
+
+            // Load initial tab content
+            csBodyContent.innerHTML = `<div class="cs-tab-panel active">${data.tabs[0].content}</div>`;
+
+            // Setup tab switch events
+            const tabs = csTabHeaders.querySelectorAll('.cs-tab');
+            tabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    playSoundClick();
+                    tabs.forEach(t => t.classList.remove('active'));
+                    tab.classList.add('active');
+
+                    const idx = +tab.getAttribute('data-idx');
+                    csBodyContent.innerHTML = `<div class="cs-tab-panel active">${data.tabs[idx].content}</div>`;
+                });
+            });
+
+            csModal.classList.add('active');
+        }
+
+        // Setup triggers
+        document.querySelectorAll('.btn-cs').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const proj = btn.getAttribute('data-project');
+                renderCaseStudy(proj);
+            });
+        });
+
+        if (csCloseBtn) {
+            csCloseBtn.addEventListener('click', () => {
+                playSoundClick();
+                csModal.classList.remove('active');
+            });
+        }
+        if (csModal) {
+            csModal.addEventListener('click', e => {
+                if (e.target === csModal) csModal.classList.remove('active');
+            });
+        }
+
+        // ── CONTACT FORM HANDLER ───────────────
+        const contactForm = document.getElementById('contact-cockpit-form');
+        const formStatus = document.getElementById('contact-form-status');
+
+        if (contactForm) {
+            contactForm.addEventListener('submit', e => {
+                e.preventDefault();
+                playSoundClick();
+                
+                formStatus.style.display = 'block';
+                formStatus.style.color = 'var(--accent-color)';
+                formStatus.textContent = 'SYS.TRANSLINK: ESTABLISHING COCKPIT HANDSHAKE...';
+
+                setTimeout(() => {
+                    formStatus.textContent = 'SYS.TRANSLINK: ENVELOPE AES-256 SECURED...';
+                    setTimeout(() => {
+                        formStatus.style.color = '#10b981';
+                        formStatus.textContent = 'SYS.TRANSLINK: MESSAGE SUCCESSFULLY BROADCASTED!';
+                        contactForm.reset();
+                        setTimeout(() => {
+                            formStatus.style.display = 'none';
+                        }, 4000);
+                    }, 1200);
+                }, 1000);
+            });
+        }
+
+        // Add extra items to command palette
+        cmdItems.push(
+            { label: 'View Holographic PDF Resume', icon: 'fa-eye', shortcut: '', action: () => { resumeModal.classList.add('active'); } },
+            { label: 'View JARVIS AI Case Study', icon: 'fa-microscope', shortcut: '', action: () => { renderCaseStudy('jarvis'); } },
+            { label: 'View 2D Train Simulator Case Study', icon: 'fa-microscope', shortcut: '', action: () => { renderCaseStudy('simulator'); } },
+            { label: 'View SaaS Platform Case Study', icon: 'fa-microscope', shortcut: '', action: () => { renderCaseStudy('saas'); } },
+            { label: 'View AI Sentiment Analysis Case Study', icon: 'fa-microscope', shortcut: '', action: () => { renderCaseStudy('sentiment'); } },
+            { label: 'View AI Caption Generator Case Study', icon: 'fa-microscope', shortcut: '', action: () => { renderCaseStudy('caption'); } },
+            { label: 'View AI Tools Platform Case Study', icon: 'fa-microscope', shortcut: '', action: () => { renderCaseStudy('aitools'); } },
+            { label: 'View TrollVerse Case Study', icon: 'fa-microscope', shortcut: '', action: () => { renderCaseStudy('trollverse'); } },
+            { label: 'Communications Form', icon: 'fa-envelope', shortcut: '', action: () => document.querySelector('.contact-section').scrollIntoView({ behavior:'smooth' }) }
+        );
+        renderCmdItems();
+    </script>
+</body>
+</html>

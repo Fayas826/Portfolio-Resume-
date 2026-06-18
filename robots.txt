@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://proweb-creators.netlify.app/sitemap.xml
