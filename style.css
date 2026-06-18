@@ -1800,7 +1800,8 @@ body {
     }
     #bg-canvas, .theme-switcher, #intro-scan, .gradient-blob, #cmd-palette, .status-widget, 
     .case-study-backdrop, .resume-modal-backdrop, .github-showcase, .blog-section, 
-    .testimonials-section, .contact-section, #hero-landing, .media-hub-section {
+    .testimonials-section, .contact-section, #hero-landing, .media-hub-section,
+    .no-print, .resume-stats-panel {
         display: none !important;
     }
     .resume-container {
@@ -1998,7 +1999,7 @@ body {
         font-size: 7.5pt !important;
     }
     
-    .project-item, .experience-item, .internship-item, .skill-category, .cert-card {
+    .project-item, .experience-item, .internship-item, .skill-category, .cert-card, .timeline-node {
         page-break-inside: avoid !important;
         break-inside: avoid !important;
     }
