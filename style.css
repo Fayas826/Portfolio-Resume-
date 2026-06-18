@@ -1817,17 +1817,28 @@ body {
         border: none !important;
     }
     .sidebar {
+        display: block !important;
         width: 34% !important;
         background-color: var(--sidebar-bg) !important;
         border-right: 1px solid var(--border-color) !important;
         padding: 12mm 8mm !important;
-        gap: 1.25rem !important;
     }
     .main-content {
+        display: block !important;
         width: 66% !important;
         background-color: #ffffff !important;
         padding: 12mm 10mm 12mm 8mm !important;
-        gap: 1.25rem !important;
+    }
+    .sidebar > section, .main-content > section {
+        display: block !important;
+        margin-bottom: 1.25rem !important;
+        page-break-inside: auto !important;
+        break-inside: auto !important;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        page-break-after: avoid !important;
+        break-after: avoid !important;
+        position: relative !important;
     }
     
     /* Typography Overrides */
@@ -1844,6 +1855,12 @@ body {
         font-size: 8.5pt !important;
         margin-bottom: 0.6rem !important;
         letter-spacing: 1px !important;
+        display: block !important;
+        border-bottom: 1.5px solid var(--border-color) !important;
+        padding-bottom: 3px !important;
+    }
+    .sidebar h3::after, .main-content h3::after {
+        display: none !important;
     }
     .info-item {
         font-size: 8pt !important;
