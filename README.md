@@ -1,8 +1,6 @@
 # 🌌 Muhammed Al Fayas N – Portfolio & ATS Resume Console
 
 An immersive, interactive 3D developer portfolio and high-scoring, Workday-optimized ATS resume console. Built using HTML5, modern vanilla CSS, Three.js (WebGL), FastAPI, and Docker.
-
-[![Live Site](https://img.shields.io/badge/Live-proweb--creators.netlify.app-blueviolet?style=for-the-badge&logo=netlify)](https://proweb-creators.netlify.app)
 [![ATS Compatibility](https://img.shields.io/badge/ATS--Score-98%2F100-success?style=for-the-badge&logo=workday)](./Fayas_Resume_v7.pdf)
 
 ---
